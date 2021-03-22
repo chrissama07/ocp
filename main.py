@@ -2,6 +2,9 @@ import random
 
 a, b, c, d, e, f, g, h = range(8)  # nodes
 
+beta_min = 0.5
+beta_max = 0.8
+
 A = [  # adjacency matrix of infection rate
     [0, random.uniform(0.5, 0.8), random.uniform(0.5, 0.8), random.uniform(0.5, 0.8), 0, random.uniform(0.5, 0.8), 0,
      0],
@@ -39,10 +42,6 @@ class X:
         self.delta = [random.uniform(0, 1) for _ in range(N)]
         self.fit = self.fitness_value()
 
-    def init(self, delta):
-        self.delta = delta
-        self.fit = self.fitness_value()
-
     def fitness_value(self):
         """
         fitness_value
@@ -55,19 +54,41 @@ class X:
             fitness += self.delta[i] * Cn[i]
         return fitness
 
+    def get_fit(self):
+        self.fit = 0
+        for i in range(N):
+            self.fit += self.delta[i] * Cn[i]
 
-def current_to_rand(r_list, x_list, i):
+    def get_delta(self, delta):
+        self.delta = delta
+
+    def put_delta(self):
+        return self.delta
+
+
+def current_to_rand(xx_list, r1, r2, r3, i):
     v_delta = []
     for j in range(N):
-        current_delta = x_list[i].delta[j] + \
-                        k * (x_list[r_list[0]].delta[j] - x_list[i].delta[j]) + \
-                        F * (x_list[r_list[1]].delta[j] - x_list[r_list[2]].delta[j])
+        current_delta = xx_list[i].delta[j] + \
+                        k * (xx_list[r1].delta[j] - xx_list[i].delta[j]) + \
+                        F * (xx_list[r2].delta[j] - xx_list[r3].delta[j])
         v_delta.append(current_delta)
     return v_delta
 
 
+def compare_max(delta):
+    for i in range(len(delta)):
+        delta[i] = max(delta[i], beta_min)
+    return delta
+
+
+def compare_min(delta):
+    for i in range(len(delta)):
+        delta[i] = min(delta[i], beta_max)
+    return delta
+
+
 x_list = []  # list of vectors
-v_list = []
 for i in range(N):  # initialize x_list
     p = X()
     x_list.append(p)
@@ -76,12 +97,20 @@ t = 1
 
 while t <= T_DE:
     for i in range(N):
+        vj_list = []
         for j in range(no):
-            r_list = []  # list of indexes of random nodes
-            while len(r_list) == 3:  # generate the list
-                r = random.randint(1, N)
+            r_list = [0 for _ in range(3)]  # list of indexes of random nodes
+            for m in range(len(r_list)):  # generate the list
+                r = random.randint(0, N - 1)
                 if r != i:
-                    r_list.append(r)
-            vj = X(current_to_rand(r_list, x_list, i))
-    t = t + 1
+                    r_list[m] = r
+                else:
+                    m -= 1
+            vj = X()
+            vj.get_delta(current_to_rand(x_list, r_list[0], r_list[1], r_list[2], i))
+            vj.get_fit()
+            vj.get_delta(compare_max(vj.put_delta()))
+            vj.get_delta(compare_min(vj.put_delta()))
+            vj_list.append(vj)
 
+    t = t + 1
