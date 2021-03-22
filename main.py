@@ -106,14 +106,14 @@ def compare_min(delta):
         delta[i] = min(delta[i], beta_max)
     return delta
 
-
+# initialize X
 x_list = []  # list of vectors
 for i in range(N):  # initialize x_list
     p = X()
     x_list.append(p)
 
+# DE
 t = 1
-
 while t <= T_DE:        # iteration of DE
     for i in range(N):      # iteration of generation
         vj_list = []
