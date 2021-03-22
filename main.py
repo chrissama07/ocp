@@ -6,17 +6,17 @@ beta_min = 0.5
 beta_max = 0.8
 
 A = [  # adjacency matrix of infection rate
-    [0, random.uniform(0.5, 0.8), random.uniform(0.5, 0.8), random.uniform(0.5, 0.8), 0, random.uniform(0.5, 0.8), 0,
+    [0, random.uniform(beta_min, beta_max), random.uniform(beta_min, beta_max), random.uniform(beta_min, beta_max), 0, random.uniform(beta_min, beta_max), 0,
      0],
-    [random.uniform(0.5, 0.8), 0, random.uniform(0.5, 0.8), 0, 0, 0, 0, 0],
-    [random.uniform(0.5, 0.8), random.uniform(0.5, 0.8), 0, random.uniform(0.5, 0.8), 0, random.uniform(0.5, 0.8), 0,
+    [random.uniform(beta_min, beta_max), 0, random.uniform(beta_min, beta_max), 0, 0, 0, 0, 0],
+    [random.uniform(beta_min, beta_max), random.uniform(beta_min, beta_max), 0, random.uniform(beta_min, beta_max), 0, random.uniform(beta_min, beta_max), 0,
      0],
-    [random.uniform(0.5, 0.8), 0, random.uniform(0.5, 0.8), 0, random.uniform(0.5, 0.8), 0, random.uniform(0.5, 0.8),
-     random.uniform(0.5, 0.8)],
-    [0, 0, 0, random.uniform(0.5, 0.8), 0, random.uniform(0.5, 0.8), 0, 0],
-    [random.uniform(0.5, 0.8), 0, random.uniform(0.5, 0.8), 0, random.uniform(0.5, 0.8), 0, 0],
-    [0, 0, 0, random.uniform(0.5, 0.8), 0, 0, 0, random.uniform(0.5, 0.8)],
-    [0, 0, 0, random.uniform(0.5, 0.8), 0, 0, random.uniform(0.5, 0.8), 0]
+    [random.uniform(beta_min, beta_max), 0, random.uniform(beta_min, beta_max), 0, random.uniform(beta_min, beta_max), 0, random.uniform(beta_min, beta_max),
+     random.uniform(beta_min, beta_max)],
+    [0, 0, 0, random.uniform(beta_min, beta_max), 0, random.uniform(beta_min, beta_max), 0, 0],
+    [random.uniform(beta_min, beta_max), 0, random.uniform(beta_min, beta_max), 0, random.uniform(beta_min, beta_max), 0, 0],
+    [0, 0, 0, random.uniform(beta_min, beta_max), 0, 0, 0, random.uniform(beta_min, beta_max)],
+    [0, 0, 0, random.uniform(beta_min, beta_max), 0, 0, random.uniform(beta_min, beta_max), 0]
 ]
 
 N = 8  # number of nodes
@@ -67,6 +67,15 @@ class X:
 
 
 def current_to_rand(xx_list, r1, r2, r3, i):
+    '''
+    current/rand/1
+    :param xx_list:
+    :param r1: vec{x_{r1}}
+    :param r2: vec{x_{r2}}
+    :param r3: vec{x_{r3}}
+    :param i: vec{x_{i}}
+    :return: vec{v_{j}}.delta
+    '''
     v_delta = []
     for j in range(N):
         current_delta = xx_list[i].delta[j] + \
@@ -77,12 +86,22 @@ def current_to_rand(xx_list, r1, r2, r3, i):
 
 
 def compare_max(delta):
+    '''
+    lower bound
+    :param delta: delta
+    :return: turn into lower bound delta
+    '''
     for i in range(len(delta)):
         delta[i] = max(delta[i], beta_min)
     return delta
 
 
 def compare_min(delta):
+    '''
+    upper bound
+    :param delta: delta
+    :return: turn into upper bound delta
+    '''
     for i in range(len(delta)):
         delta[i] = min(delta[i], beta_max)
     return delta
@@ -95,10 +114,10 @@ for i in range(N):  # initialize x_list
 
 t = 1
 
-while t <= T_DE:
-    for i in range(N):
+while t <= T_DE:        # iteration of DE
+    for i in range(N):      # iteration of generation
         vj_list = []
-        for j in range(no):
+        for j in range(no):     # children of each node in each generation
             r_list = [0 for _ in range(3)]  # list of indexes of random nodes
             for m in range(len(r_list)):  # generate the list
                 r = random.randint(0, N - 1)
@@ -111,6 +130,6 @@ while t <= T_DE:
             vj.get_fit()
             vj.get_delta(compare_max(vj.put_delta()))
             vj.get_delta(compare_min(vj.put_delta()))
-            vj_list.append(vj)
+            vj_list.append(vj)      # add this vj into list
 
     t = t + 1
