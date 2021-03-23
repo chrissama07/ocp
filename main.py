@@ -234,9 +234,6 @@ def main():
         p.get_fit()
         p.get_feas()
         x_list.append(p)
-        # print(x_list[i].delta)
-        # print(x_list[i].fit)
-        # print(x_list[i].feas)
 
     # DE
     x_best = DE(x_list)
