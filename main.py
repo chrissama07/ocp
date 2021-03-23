@@ -49,7 +49,7 @@ class X:
 
     def fitness_value(self):
         """
-        fitness_value
+        calculate fitness_value
         :param self:   list of vaccination rate
         :return:    fitness value
         """
@@ -60,6 +60,10 @@ class X:
         return fitness
 
     def feasible_value(self):
+        """
+        calculate feasible value
+        :return: feasible value
+        """
         A_ = np.zeros([N, N])
         for i in range(N):
             for j in range(N):
@@ -89,7 +93,7 @@ class X:
 
 
 def current_to_rand(xx_list, r1, r2, r3, i):
-    '''
+    """
     current/rand/1
     :param xx_list:
     :param r1: vec{x_{r1}}
@@ -97,7 +101,7 @@ def current_to_rand(xx_list, r1, r2, r3, i):
     :param r3: vec{x_{r3}}
     :param i: vec{x_{i}}
     :return: vec{v_{j}}.delta
-    '''
+    """
     v_delta = []
     for j in range(N):
         current_delta = xx_list[i].delta[j] + \
@@ -119,17 +123,23 @@ def compare_max(delta):
 
 
 def compare_min(delta):
-    '''
+    """
     upper bound
     :param delta: delta
     :return: turn into upper bound delta
-    '''
+    """
     for i in range(len(delta)):
         delta[i] = min(delta[i], beta_max)
     return delta
 
 
 def select_better_fit(x1, x2):
+    """
+    select better x with better fit value
+    :param x1: first x
+    :param x2: second x
+    :return: better x with better fit value
+    """
     if x1.fit <= x2.fit:
         return x1
     else:
@@ -137,8 +147,14 @@ def select_better_fit(x1, x2):
 
 
 def crossover_SBX(xi, vj):
+    """
+    crossoverSBX
+    :param xi: parent
+    :param vj: mutation
+    :return: crossover
+    """
     belta = 0
-    while isinstance(belta, complex):
+    while isinstance(belta, complex):   # belt must not be complex
         sbx_rand = random.random()
         if sbx_rand <= 0.5:
             belta = (2 * sbx_rand) ** (1 / (1 + sbx_n))
@@ -148,9 +164,9 @@ def crossover_SBX(xi, vj):
     c2 = X()
     c1_delta = []
     c2_delta = []
-    xi_delta = xi.delta
-    vj_delta = vj.delta
-    for i in range(N):
+    xi_delta = xi.put_delta()
+    vj_delta = vj.put_delta()
+    for i in range(N):      # crossover
         delta1 = 0.5 * ((1 + belta) * xi_delta[i] + (1 - belta) * vj_delta[i])
         delta2 = 0.5 * ((1 - belta) * xi_delta[i] + (1 + belta) * vj_delta[i])
         c1_delta.append(delta1)
@@ -161,7 +177,51 @@ def crossover_SBX(xi, vj):
     c2.get_delta(c2_delta)
     c2.get_fit()
     c2.get_feas()
-    return select_better_fit(c1, c2)
+    return select_better_fit(c1, c2)    # better crossover child
+
+def DE(x_list):
+    """
+    DE algorithm
+    :param x_list:
+    :return: best x by DE
+    """
+    x_best = x_list[0]
+    # DE
+    t = 1
+    while t <= T_DE:  # iteration of DE
+        for i in range(N):  # iteration of generation
+            u_best = X()
+            for j in range(no):  # children of each node in each generation
+                r_list = random.sample(range(N), 3)
+                for m in range(len(r_list)):
+                    while r_list[m] == i:
+                        r_list[m] = random.randint(0, N - 1)
+                vj = X()
+                vj.get_delta(current_to_rand(x_list, r_list[0], r_list[1], r_list[2], i))
+                vj.get_delta(compare_max(vj.put_delta()))
+                vj.get_delta(compare_min(vj.put_delta()))
+                vj.get_fit()
+                vj.get_feas()
+
+                # crossover
+                cr_rand = random.random()
+                if cr_rand <= CR:
+                    uj = crossover_SBX(x_list[i], vj)
+                else:
+                    uj = x_list[i]
+
+                # select
+                if j == 1:
+                    u_best = uj
+                else:
+                    u_best = select_better_fit(u_best, uj)
+            if u_best.put_feas() <= x_list[i].put_feas() and u_best.put_feas() <= 0:
+                x_list[i] = u_best
+            if x_list[i].put_feas() < x_best.put_feas():
+                x_best = x_list[i]
+
+        t = t + 1
+    return x_best
 
 
 def main():
@@ -179,47 +239,8 @@ def main():
         # print(x_list[i].feas)
 
     # DE
-    t = 1
-    while t <= T_DE:  # iteration of DE
-        for i in range(N):  # iteration of generation
-            u_best = X()
-            for j in range(no):  # children of each node in each generation
-
-                # r_list = [0 for _ in range(3)]  # list of indexes of random nodes
-                # m = 0
-                # while m < len(r_list):  # generate the list
-                #     r = random.randint(0, N - 1)
-                #     if r != i:
-                #         r_list[m] = r
-                #         m += 1
-                #     else:
-                #         m -= 1
-                r_list = random.sample(range(N), 3)
-                for m in range(len(r_list)):
-                    while r_list[m] == i:
-                        r_list[m] = random.randint(0, N - 1)
-                vj = X()
-                vj.get_delta(current_to_rand(x_list, r_list[0], r_list[1], r_list[2], i))
-                vj.get_delta(compare_max(vj.put_delta()))
-                vj.get_delta(compare_min(vj.put_delta()))
-                vj.get_fit()
-                vj.get_feas()
-
-                # crossover
-                cr_rand = random.random()
-                uj = X()
-                if cr_rand <= CR:
-                    uj = crossover_SBX(x_list[i], vj)
-                else:
-                    uj = x_list[i]
-
-                # select
-                if j == 1:
-                    u_best = uj
-                else:
-                    u_best = select_better_fit(u_best, uj)
-
-        t = t + 1
+    x_best = DE(x_list)
+    print(x_best.delta)
 
 
 main()
