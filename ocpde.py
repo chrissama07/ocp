@@ -1,5 +1,6 @@
 import random
 import math
+import time
 import numpy as np
 
 beta_min = 0.5
@@ -306,12 +307,27 @@ def main():
         p.get_feas()
         x_list.append(p)
 
+    # time count start
+    time_start = time.time()
+
     # DE
     x_best_DE = DE(x_list)
+    time_end_DE = time.time()
     print(x_best_DE.delta)
 
     # MA
     x_best_DEMA = MA(x_best_DE)
+    time_end_MA = time.time()
     print(x_best_DEMA.delta)
 
+    # print times
+    print(" DE :", time_end_DE - time_start)
+    print(" MA :", time_end_MA - time_end_DE)
 
+    # print best delta
+    for i in range(N):
+        print("the best vaccination rate of",  i,  "st node is", x_best_DEMA.delta[i])
+
+    # print lowest cost
+    print("\n")
+    print("the lowest cost of vaccination is", x_best_DEMA.put_fit())
