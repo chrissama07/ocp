@@ -20,7 +20,5 @@
 #     print(x_list[i].delta)
 
 
-for i in range(3):
-    if i == 1:
-        i -= 1
-    print(i)
+def fuck():
+    print(1)
