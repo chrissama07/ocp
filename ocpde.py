@@ -47,8 +47,8 @@ T_max = 1000
 T_min = 10
 L = 20  # iteration in each temperature
 # area
-d_max = 0.4  # upper bound
-d_min = 0.05  # lower bound
+d_max = 0.05  # upper bound
+d_min = -0.05  # lower bound
 m = 10  # length of unfeasible solution list
 a = 0.8  # Coefficient of variation of T
 unfeasible_list = []
@@ -131,7 +131,7 @@ def compare_max(delta):
     :return: turn into lower bound delta
     """
     for i in range(len(delta)):
-        delta[i] = max(delta[i], beta_min)
+        delta[i] = max(delta[i], 0)
     return delta
 
 
@@ -142,7 +142,7 @@ def compare_min(delta):
     :return: turn into upper bound delta
     """
     for i in range(len(delta)):
-        delta[i] = min(delta[i], beta_max)
+        delta[i] = min(delta[i], 1)
     return delta
 
 
@@ -270,6 +270,8 @@ def MA(x_best):
             x_new = X()
             for i in range(N):
                 x_new.delta.append(x.delta[i] + random.uniform(d_min, d_max))
+            # x_new.get_delta(compare_max(x_new.put_delta()))
+            # x_new.get_delta(compare_min(x_new.put_delta()))
             x_new.get_fit()
             x_new.get_feas()
 
@@ -313,21 +315,27 @@ def main():
     # DE
     x_best_DE = DE(x_list)
     time_end_DE = time.time()
-    print(x_best_DE.delta)
+    print(" DE:\n", x_best_DE.delta)
+    print()
+    print(" lowest cost by DE:", x_best_DE.put_fit())
+    print()
 
     # MA
     x_best_DEMA = MA(x_best_DE)
     time_end_MA = time.time()
-    print(x_best_DEMA.delta)
+    print(" MA:\n", x_best_DEMA.delta)
+    print()
 
     # print times
+    print(" time cost:")
     print(" DE :", time_end_DE - time_start)
     print(" MA :", time_end_MA - time_end_DE)
+    print()
 
     # print best delta
     for i in range(N):
-        print("the best vaccination rate of",  i,  "st node is", x_best_DEMA.delta[i])
+        print(" the best vaccination rate of",  i,  "st node is", x_best_DEMA.delta[i])
 
     # print lowest cost
-    print("\n")
-    print("the lowest cost of vaccination is", x_best_DEMA.put_fit())
+    print()
+    print(" the lowest cost of vaccination is", x_best_DEMA.put_fit())
