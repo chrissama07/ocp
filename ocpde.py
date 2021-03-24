@@ -46,10 +46,10 @@ T_max = 1000
 T_min = 10
 L = 20  # iteration in each temperature
 # area
-d_max = 0.4     # upper bound
-d_min = 0.05    # lower bound
+d_max = 0.4  # upper bound
+d_min = 0.05  # lower bound
 m = 10  # length of unfeasible solution list
-a = 0.8 # Coefficient of variation of T
+a = 0.8  # Coefficient of variation of T
 unfeasible_list = []
 
 
@@ -124,11 +124,11 @@ def current_to_rand(xx_list, r1, r2, r3, i):
 
 
 def compare_max(delta):
-    '''
+    """
     lower bound
     :param delta: delta
     :return: turn into lower bound delta
-    '''
+    """
     for i in range(len(delta)):
         delta[i] = max(delta[i], beta_min)
     return delta
@@ -315,4 +315,3 @@ def main():
     print(x_best_DEMA.delta)
 
 
-main()
