@@ -1,12 +1,31 @@
 import random
 import math
 import time
-import data
-from scipy.sparse.linalg import eigsh
+import numpy as np
+import copy
 
-A = data.A
+beta_min = 0.5
+beta_max = 0.8
 
-N = data.N  # number of nodes
+A = ([  # adjacency matrix of infection rate
+    [0, random.uniform(beta_min, beta_max), random.uniform(beta_min, beta_max), random.uniform(beta_min, beta_max), 0,
+     random.uniform(beta_min, beta_max), 0,
+     0],
+    [random.uniform(beta_min, beta_max), 0, random.uniform(beta_min, beta_max), 0, 0, 0, 0, 0],
+    [random.uniform(beta_min, beta_max), random.uniform(beta_min, beta_max), 0, random.uniform(beta_min, beta_max), 0,
+     random.uniform(beta_min, beta_max), 0,
+     0],
+    [random.uniform(beta_min, beta_max), 0, random.uniform(beta_min, beta_max), 0, random.uniform(beta_min, beta_max),
+     0, random.uniform(beta_min, beta_max),
+     random.uniform(beta_min, beta_max)],
+    [0, 0, 0, random.uniform(beta_min, beta_max), 0, random.uniform(beta_min, beta_max), 0, 0],
+    [random.uniform(beta_min, beta_max), 0, random.uniform(beta_min, beta_max), 0, random.uniform(beta_min, beta_max),
+     0, 0, 0],
+    [0, 0, 0, random.uniform(beta_min, beta_max), 0, 0, 0, random.uniform(beta_min, beta_max)],
+    [0, 0, 0, random.uniform(beta_min, beta_max), 0, 0, random.uniform(beta_min, beta_max), 0]
+])
+
+N = 8  # number of nodes
 
 Cn = [random.randint(10, 20) for _ in range(N)]  # the cost of vaccine
 
@@ -42,6 +61,7 @@ class X:
     fit = 0
     feas = 0
 
+
     def fitness_value(self):
         """
         calculate fitness_value
@@ -59,30 +79,12 @@ class X:
         calculate feasible value
         :return: feasible value
         """
-        # A_ = np.zeros([N, N])
-        # for i in range(N):
-        #     for j in range(N):
-        #         if A[i][j] != 0:
-        #             A_[i][j] = (1.0 - self.delta[i]) * (1.0 - self.delta[j]) * A[i][j]
-        # return max(np.linalg.eigvals(A_ - np.diag(gamma)))
-        A_ = A
+        A_ = np.zeros([N, N])
         for i in range(N):
-            for j in range(len(A_[i].indices)):
-                index = A_[i].indices[j]
-                A_[i, index] = (1.0 - self.delta[i]) * (1.0 - self.delta[index]) * A[i, index]
-        # for i in range(N):
-        #     for j in range(N):
-        #         if A[i, j] != 0:
-        #             A_[i, j] = (1.0 - self.delta[i]) * (1.0 - self.delta[j]) * A[i, j]
-        # for i in range(N):
-        #     max_index = 0
-        #     for j in range(len(A.indices)):
-        #         index = A.indices[j]
-        #         if index > max_index:
-        #             A_[i, index] = (1.0 - self.delta[i]) * (1.0 - self.delta[index]) * A[i, index]
-        # A_ = A_.toscr()
-        evals_large, evecs_large = eigsh(A_, 1, which='LM')
-        return evals_large
+            for j in range(N):
+                if A[i][j] != 0:
+                    A_[i][j] = (1.0 - self.delta[i]) * (1.0 - self.delta[j]) * A[i][j]
+        return max(np.linalg.eigvals(A_ - np.diag(gamma)))
 
     def get_fit(self):
         self.fit = 0
@@ -166,13 +168,13 @@ def crossover_SBX(xi, vj):
     :param vj: mutation
     :return: crossover
     """
-    beta = 0
-    while isinstance(beta, complex):  # belt must not be complex
+    belta = 0
+    while isinstance(belta, complex):  # belt must not be complex
         sbx_rand = random.random()
         if sbx_rand <= 0.5:
-            beta = (2 * sbx_rand) ** (1 / (1 + sbx_n))
+            belta = (2 * sbx_rand) ** (1 / (1 + sbx_n))
         else:
-            beta = (1 / (2 - sbx_n * 2)) ** (1 / (1 + sbx_n))
+            belta = (1 / (2 - sbx_n * 2)) ** (1 / (1 + sbx_n))
     c1 = X()
     c2 = X()
     c1_delta = []
@@ -180,8 +182,8 @@ def crossover_SBX(xi, vj):
     xi_delta = xi.put_delta()
     vj_delta = vj.put_delta()
     for i in range(N):  # crossover
-        delta1 = 0.5 * ((1 + beta) * xi_delta[i] + (1 - beta) * vj_delta[i])
-        delta2 = 0.5 * ((1 - beta) * xi_delta[i] + (1 + beta) * vj_delta[i])
+        delta1 = 0.5 * ((1 + belta) * xi_delta[i] + (1 - belta) * vj_delta[i])
+        delta2 = 0.5 * ((1 - belta) * xi_delta[i] + (1 + belta) * vj_delta[i])
         c1_delta.append(delta1)
         c2_delta.append(delta2)
     c1.get_delta(c1_delta)
@@ -278,17 +280,17 @@ def SA(x_best):
 
             # compare
             if x_new.put_fit() < x.put_fit():
-                # x = x_new
                 x.get_delta(x_new.put_delta())
                 x.get_fit()
                 x.get_feas()
             else:
                 p = calculate_p(x_new.put_fit(), x.put_fit(), T)
                 if p > random.uniform(0, 1):
-                    # x = x_new
                     x.get_delta(x_new.put_delta())
                     x.get_fit()
                     x.get_feas()
+
+
             it += 1
 
         # decide whether algorithm ends
@@ -340,7 +342,7 @@ def main():
 
     # print best delta
     for i in range(N):
-        print(" the best vaccination rate of", i, "st node is", x_best_DESA.delta[i])
+        print(" the best vaccination rate of",  i,  "st node is", x_best_DESA.delta[i])
 
     # print lowest cost
     print()
