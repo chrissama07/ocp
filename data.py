@@ -1,5 +1,7 @@
 import iceland
 
-A = iceland.sp_a
+A = iceland.edges
 
 N = iceland.node_number
+
+E = iceland.edge_number
