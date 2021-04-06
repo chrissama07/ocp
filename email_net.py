@@ -7,7 +7,7 @@ import re
 beta_min = 0.5
 beta_max = 0.8
 
-with open(r'Email-EuAll.txt') as f:
+with open(r'networks/email net/source/Email-EuAll.txt') as f:
     lines = f.readlines()
 
 lines.pop(0)
