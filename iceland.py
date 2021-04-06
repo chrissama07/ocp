@@ -33,11 +33,11 @@ Cn = np.array([random.randint(10, 20) for _ in range(node_number)])  # the cost 
 gamma = np.array([random.uniform(0.6, 0.7) for _ in range(node_number)])  # curing rate
 
 # save edges data
-np.savetxt("iceland.data.txt", edges)
+np.savetxt("networks/iceland/iceland.data.txt", edges)
 
-np.savetxt("iceland.curingrate.txt", gamma)
+np.savetxt("networks/iceland/iceland.curingrate.txt", gamma)
 
-np.savetxt("iceland.cost.txt", Cn)
+np.savetxt("networks/iceland/iceland.cost.txt", Cn)
 
 with open("networks/iceland/iceland.parameter.txt", "w") as f:
     text = f.write(str(node_number) + "\n" + str(edge_number))
