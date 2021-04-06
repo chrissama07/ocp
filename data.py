@@ -1,7 +1,14 @@
-import iceland
+import numpy as np
 
-A = iceland.edges
+A = np.loadtxt("iceland.data.txt")
 
-N = iceland.node_number
+Cn = np.loadtxt("iceland.cost.txt")
 
-E = iceland.edge_number
+gamma = np.loadtxt("iceland.curingrate.txt")
+
+with open(r'networks/iceland/iceland.parameter.txt') as f:
+    lines = f.readlines()
+
+N = int(lines[0])
+
+E = int(lines[1])
