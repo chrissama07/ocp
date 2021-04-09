@@ -1,4 +1,3 @@
-from scipy import sparse
 import random
 import numpy as np
 

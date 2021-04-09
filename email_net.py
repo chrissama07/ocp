@@ -1,13 +1,11 @@
-from scipy import sparse
+import numpy as np
 import random
-from scipy.linalg import eig, eigh
-from scipy.sparse.linalg import eigs, eigsh
 import re
 
 beta_min = 0.5
 beta_max = 0.8
 
-with open(r'networks/email net/source/Email-EuAll.txt') as f:
+with open(r'networks/emailNet/source/Email-EuAll.txt') as f:
     lines = f.readlines()
 
 lines.pop(0)
@@ -16,17 +14,32 @@ properties = lines.pop(0)
 lines.pop(0)
 
 node_number = int(re.findall("\d+", properties)[0])  # number of nodes
+edge_number = int(re.findall("\d+", properties)[1])
 
 # sparse adjacency matrix of network
-sp_a = sparse.lil_matrix((node_number, node_number))
+lines = np.array(lines)
+edges = np.empty([edge_number, 3])
 
-# initialize adjacency matrix of network (add beta)
+i = 0
 for line in lines:
     numbers = [int(i) for i in line.split()]
-    sp_a[numbers[0], numbers[1]] = random.uniform(beta_min, beta_max)
+    for j in range(3):
+        if j < 2:
+            edges[i][j] = numbers[j]
+        else:
+            edges[i][j] = random.uniform(beta_min, beta_max)
+    i += 1
 
-sp_a = sp_a.tocsr()
+Cn = np.array([random.randint(10, 20) for _ in range(node_number)])  # the cost of vaccine
+gamma = np.array([random.uniform(0.6, 0.7) for _ in range(node_number)])  # curing rate
 
+# save edges data
+np.savetxt("networks/emailNet/emailNet.data.txt", edges)
 
-# get max eigenvalues of adjacency matrix
-# evals_large, evecs_large = eigsh(sp_a, 1, which='LM')
+np.savetxt("networks/emailNet/emailNet.curingrate.txt", gamma)
+
+np.savetxt("networks/emailNet/emailNet.cost.txt", Cn)
+
+with open("networks/emailNet/emailNet.parameter.txt", "w") as f:
+    text = f.write(str(node_number) + "\n" + str(edge_number))
+f.close()
