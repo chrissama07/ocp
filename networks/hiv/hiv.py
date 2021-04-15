@@ -5,7 +5,7 @@ import numpy as np
 beta_min = 0.5
 beta_max = 0.8
 
-with open(r'source/out.hiv') as f:
+with open(pathes.hiv_source) as f:
     lines = f.readlines()
 
 # parameters
