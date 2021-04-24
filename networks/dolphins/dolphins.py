@@ -17,7 +17,6 @@ lines = np.array(lines)
 edges = np.empty([edge_number, 3])
 
 # get three tuples of adjacency matrix
-
 i = 0
 for line in lines:
     numbers = [int(i) for i in line.split()]
