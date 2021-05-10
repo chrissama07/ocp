@@ -7,6 +7,9 @@ hiv_curingrate = r'D:\profile\2018\codes\py\ocpde\networks\hiv\hiv.curingrate.tx
 hiv_data = r'D:\profile\2018\codes\py\ocpde\networks\hiv\hiv.data.txt'
 hiv_parameter = r'D:\profile\2018\codes\py\ocpde\networks\hiv\hiv.parameter.txt'
 hiv_output = r'D:\profile\2018\codes\py\ocpde\networks\hiv\output\hiv.output.txt'
+hiv_rand2_output = r'D:\profile\2018\codes\py\ocpde\networks\hiv\output\hiv.rand2.output.txt'
+hiv_current_to_best_output = r'D:\profile\2018\codes\py\ocpde\networks\hiv\output\hiv.current_to_best.output.txt'
+hiv_rand_to_best_output = r'D:\profile\2018\codes\py\ocpde\networks\hiv\output\hiv.rand_to_best.output.txt'
 
 
 dolphins_source = r'D:\profile\2018\codes\py\ocpde\networks\dolphins\source\out.dolphins'
