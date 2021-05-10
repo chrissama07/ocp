@@ -1,5 +1,9 @@
 iceland_output = 'networks/iceland/output/iceland.output.txt'
-
+iceland_rand2_output = r'D:\profile\2018\codes\py\ocpde\networks\iceland\output\iceland.rand2.output.txt'
+iceland_rand_to_best_output = r'D:\profile\2018\codes\py\ocpde\networks\iceland\output\iceland.rand_to_best.output.txt'
+iceland_current_to_best_output = r'D:\profile\2018\codes\py\ocpde\networks\iceland\output\iceland.current_to_best' \
+                                 r'.output.txt '
+iceland_no_crossover_output = r'D:\profile\2018\codes\py\ocpde\networks\iceland\output\iceland.no_crossover.output.txt'
 
 hiv_source = r'D:\profile\2018\codes\py\ocpde\networks\hiv\source\out.hiv'
 hiv_cost = r'D:\profile\2018\codes\py\ocpde\networks\hiv\hiv.cost.txt'
@@ -10,11 +14,61 @@ hiv_output = r'D:\profile\2018\codes\py\ocpde\networks\hiv\output\hiv.output.txt
 hiv_rand2_output = r'D:\profile\2018\codes\py\ocpde\networks\hiv\output\hiv.rand2.output.txt'
 hiv_current_to_best_output = r'D:\profile\2018\codes\py\ocpde\networks\hiv\output\hiv.current_to_best.output.txt'
 hiv_rand_to_best_output = r'D:\profile\2018\codes\py\ocpde\networks\hiv\output\hiv.rand_to_best.output.txt'
+hiv_no_crossover_output = r'D:\profile\2018\codes\py\ocpde\networks\hiv\output\hiv.no_crossover.output.txt'
 
+highland_source = r'D:\profile\2018\codes\py\ocpde\networks\highland\source\out.highland'
+highland_cost = r'D:\profile\2018\codes\py\ocpde\networks\highland\highland.cost.txt'
+highland_curingrate = r'D:\profile\2018\codes\py\ocpde\networks\highland\highland.curingrate.txt'
+highland_data = r'D:\profile\2018\codes\py\ocpde\networks\highland\highland.data.txt'
+highland_parameter = r'D:\profile\2018\codes\py\ocpde\networks\highland\highland.parameter.txt'
+highland_output = r'D:\profile\2018\codes\py\ocpde\networks\highland\output\highland.output.txt'
+highland_rand2_output = r'D:\profile\2018\codes\py\ocpde\networks\highland\output\highland.rand2' \
+                        r'.output.txt '
+highland_rand_to_best_output = r'D:\profile\2018\codes\py\ocpde\networks\highland\output\highland' \
+                               r'.rand_to_best.output.txt '
+highland_current_to_best_output = r'D:\profile\2018\codes\py\ocpde\networks\highland\output\highland' \
+                                  r'.current_to_best.output.txt '
+highland_no_crossover_output = r'D:\profile\2018\codes\py\ocpde\networks\highland\output\highland' \
+                               r'.no_crossover.output.txt '
 
-dolphins_source = r'D:\profile\2018\codes\py\ocpde\networks\dolphins\source\out.dolphins'
-dolphins_cost = r'D:\profile\2018\codes\py\ocpde\networks\dolphins\dolphins.cost.txt'
-dolphins_curingrate = r'D:\profile\2018\codes\py\ocpde\networks\dolphins\dolphins.curingrate.txt'
-dolphins_data = r'D:\profile\2018\codes\py\ocpde\networks\dolphins\dolphins.data.txt'
-dolphins_parameter = r'D:\profile\2018\codes\py\ocpde\networks\dolphins\dolphins.parameter.txt'
-dolphins_output = r'D:\profile\2018\codes\py\ocpde\networks\dolphins\output\dolphins.output.txt'
+revolution_source = r'D:\profile\2018\codes\py\ocpde\networks\revolution\source\out.revolution'
+revolution_cost = r'D:\profile\2018\codes\py\ocpde\networks\revolution\revolution.cost.txt'
+revolution_curingrate = r'D:\profile\2018\codes\py\ocpde\networks\revolution\revolution.curingrate.txt'
+revolution_data = r'D:\profile\2018\codes\py\ocpde\networks\revolution\revolution.data.txt'
+revolution_parameter = r'D:\profile\2018\codes\py\ocpde\networks\revolution\revolution.parameter.txt'
+revolution_output = r'D:\profile\2018\codes\py\ocpde\networks\revolution\output\revolution.output.txt'
+revolution_rand2_output = r'D:\profile\2018\codes\py\ocpde\networks\revolution\output\revolution.rand2.output.txt'
+revolution_rand_to_best_output = r'D:\profile\2018\codes\py\ocpde\networks\revolution\output\revolution.rand_to_best' \
+                                 r'.output.txt '
+revolution_current_to_best_output = r'D:\profile\2018\codes\py\ocpde\networks\revolution\output\revolution' \
+                                    r'.current_to_best.output.txt '
+revolution_no_crossover_output = r'D:\profile\2018\codes\py\ocpde\networks\revolution\output\revolution.no_crossover' \
+                                 r'.output.txt '
+
+macaques_source = r'D:\profile\2018\codes\py\ocpde\networks\macaques\source\out.macaques'
+macaques_cost = r'D:\profile\2018\codes\py\ocpde\networks\macaques\macaques.cost.txt'
+macaques_curingrate = r'D:\profile\2018\codes\py\ocpde\networks\macaques\macaques.curingrate.txt'
+macaques_data = r'D:\profile\2018\codes\py\ocpde\networks\macaques\macaques.data.txt'
+macaques_parameter = r'D:\profile\2018\codes\py\ocpde\networks\macaques\macaques.parameter.txt'
+macaques_output = r'D:\profile\2018\codes\py\ocpde\networks\macaques\output\macaques.output.txt'
+macaques_rand2_output = r'D:\profile\2018\codes\py\ocpde\networks\macaques\output\macaques.rand2.output.txt'
+macaques_rand_to_best_output = r'D:\profile\2018\codes\py\ocpde\networks\macaques\output\macaques.rand_to_best' \
+                               r'.output.txt '
+macaques_current_to_best_output = r'D:\profile\2018\codes\py\ocpde\networks\macaques\output\macaques' \
+                                  r'.current_to_best.output.txt '
+macaques_no_crossover_output = r'D:\profile\2018\codes\py\ocpde\networks\macaques\output\macaques.no_crossover' \
+                               r'.output.txt '
+
+highschool_source = r'D:\profile\2018\codes\py\ocpde\networks\highschool\source\out.highschool'
+highschool_cost = r'D:\profile\2018\codes\py\ocpde\networks\highschool\highschool.cost.txt'
+highschool_curingrate = r'D:\profile\2018\codes\py\ocpde\networks\highschool\highschool.curingrate.txt'
+highschool_data = r'D:\profile\2018\codes\py\ocpde\networks\highschool\highschool.data.txt'
+highschool_parameter = r'D:\profile\2018\codes\py\ocpde\networks\highschool\highschool.parameter.txt'
+highschool_output = r'D:\profile\2018\codes\py\ocpde\networks\highschool\output\highschool.output.txt'
+highschool_rand2_output = r'D:\profile\2018\codes\py\ocpde\networks\highschool\output\highschool.rand2.output.txt'
+highschool_rand_to_best_output = r'D:\profile\2018\codes\py\ocpde\networks\highschool\output\highschool.rand_to_best' \
+                               r'.output.txt '
+highschool_current_to_best_output = r'D:\profile\2018\codes\py\ocpde\networks\highschool\output\highschool' \
+                                  r'.current_to_best.output.txt '
+highschool_no_crossover_output = r'D:\profile\2018\codes\py\ocpde\networks\highschool\output\highschool.no_crossover' \
+                               r'.output.txt '
