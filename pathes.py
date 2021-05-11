@@ -67,8 +67,36 @@ highschool_parameter = r'D:\profile\2018\codes\py\ocpde\networks\highschool\high
 highschool_output = r'D:\profile\2018\codes\py\ocpde\networks\highschool\output\highschool.output.txt'
 highschool_rand2_output = r'D:\profile\2018\codes\py\ocpde\networks\highschool\output\highschool.rand2.output.txt'
 highschool_rand_to_best_output = r'D:\profile\2018\codes\py\ocpde\networks\highschool\output\highschool.rand_to_best' \
-                               r'.output.txt '
+                                 r'.output.txt '
 highschool_current_to_best_output = r'D:\profile\2018\codes\py\ocpde\networks\highschool\output\highschool' \
-                                  r'.current_to_best.output.txt '
+                                    r'.current_to_best.output.txt '
 highschool_no_crossover_output = r'D:\profile\2018\codes\py\ocpde\networks\highschool\output\highschool.no_crossover' \
-                               r'.output.txt '
+                                 r'.output.txt '
+
+zachary_source = r'D:\profile\2018\codes\py\ocpde\networks\zachary\source\out.zachary'
+zachary_cost = r'D:\profile\2018\codes\py\ocpde\networks\zachary\zachary.cost.txt'
+zachary_curingrate = r'D:\profile\2018\codes\py\ocpde\networks\zachary\zachary.curingrate.txt'
+zachary_data = r'D:\profile\2018\codes\py\ocpde\networks\zachary\zachary.data.txt'
+zachary_parameter = r'D:\profile\2018\codes\py\ocpde\networks\zachary\zachary.parameter.txt'
+zachary_output = r'D:\profile\2018\codes\py\ocpde\networks\zachary\output\zachary.output.txt'
+zachary_rand2_output = r'D:\profile\2018\codes\py\ocpde\networks\zachary\output\zachary.rand2.output.txt'
+zachary_rand_to_best_output = r'D:\profile\2018\codes\py\ocpde\networks\zachary\output\zachary.rand_to_best' \
+                              r'.output.txt '
+zachary_current_to_best_output = r'D:\profile\2018\codes\py\ocpde\networks\zachary\output\zachary' \
+                                 r'.current_to_best.output.txt '
+zachary_no_crossover_output = r'D:\profile\2018\codes\py\ocpde\networks\zachary\output\zachary.no_crossover' \
+                              r'.output.txt '
+
+windsurfers_source = r'D:\profile\2018\codes\py\ocpde\networks\windsurfers\source\out.windsurfers'
+windsurfers_cost = r'D:\profile\2018\codes\py\ocpde\networks\windsurfers\windsurfers.cost.txt'
+windsurfers_curingrate = r'D:\profile\2018\codes\py\ocpde\networks\windsurfers\windsurfers.curingrate.txt'
+windsurfers_data = r'D:\profile\2018\codes\py\ocpde\networks\windsurfers\windsurfers.data.txt'
+windsurfers_parameter = r'D:\profile\2018\codes\py\ocpde\networks\windsurfers\windsurfers.parameter.txt'
+windsurfers_output = r'D:\profile\2018\codes\py\ocpde\networks\windsurfers\output\windsurfers.output.txt'
+windsurfers_rand2_output = r'D:\profile\2018\codes\py\ocpde\networks\windsurfers\output\windsurfers.rand2.output.txt'
+windsurfers_rand_to_best_output = r'D:\profile\2018\codes\py\ocpde\networks\windsurfers\output\windsurfers.rand_to_best' \
+                                  r'.output.txt '
+windsurfers_current_to_best_output = r'D:\profile\2018\codes\py\ocpde\networks\windsurfers\output\windsurfers' \
+                                     r'.current_to_best.output.txt '
+windsurfers_no_crossover_output = r'D:\profile\2018\codes\py\ocpde\networks\windsurfers\output\windsurfers.no_crossover' \
+                                  r'.output.txt '
