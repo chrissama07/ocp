@@ -100,3 +100,31 @@ windsurfers_current_to_best_output = r'D:\profile\2018\codes\py\ocpde\networks\w
                                      r'.current_to_best.output.txt '
 windsurfers_no_crossover_output = r'D:\profile\2018\codes\py\ocpde\networks\windsurfers\output\windsurfers.no_crossover' \
                                   r'.output.txt '
+
+bundesliga_source = r'D:\profile\2018\codes\py\ocpde\networks\bundesliga\source\out.bundesliga'
+bundesliga_cost = r'D:\profile\2018\codes\py\ocpde\networks\bundesliga\bundesliga.cost.txt'
+bundesliga_curingrate = r'D:\profile\2018\codes\py\ocpde\networks\bundesliga\bundesliga.curingrate.txt'
+bundesliga_data = r'D:\profile\2018\codes\py\ocpde\networks\bundesliga\bundesliga.data.txt'
+bundesliga_parameter = r'D:\profile\2018\codes\py\ocpde\networks\bundesliga\bundesliga.parameter.txt'
+bundesliga_output = r'D:\profile\2018\codes\py\ocpde\networks\bundesliga\output\bundesliga.output.txt'
+bundesliga_rand2_output = r'D:\profile\2018\codes\py\ocpde\networks\bundesliga\output\bundesliga.rand2.output.txt'
+bundesliga_rand_to_best_output = r'D:\profile\2018\codes\py\ocpde\networks\bundesliga\output\bundesliga.rand_to_best' \
+                                  r'.output.txt '
+bundesliga_current_to_best_output = r'D:\profile\2018\codes\py\ocpde\networks\bundesliga\output\bundesliga' \
+                                     r'.current_to_best.output.txt '
+bundesliga_no_crossover_output = r'D:\profile\2018\codes\py\ocpde\networks\bundesliga\output\bundesliga.no_crossover' \
+                                  r'.output.txt '
+
+league_source = r'D:\profile\2018\codes\py\ocpde\networks\league\source\out.league'
+league_cost = r'D:\profile\2018\codes\py\ocpde\networks\league\league.cost.txt'
+league_curingrate = r'D:\profile\2018\codes\py\ocpde\networks\league\league.curingrate.txt'
+league_data = r'D:\profile\2018\codes\py\ocpde\networks\league\league.data.txt'
+league_parameter = r'D:\profile\2018\codes\py\ocpde\networks\league\league.parameter.txt'
+league_output = r'D:\profile\2018\codes\py\ocpde\networks\league\output\league.output.txt'
+league_rand2_output = r'D:\profile\2018\codes\py\ocpde\networks\league\output\league.rand2.output.txt'
+league_rand_to_best_output = r'D:\profile\2018\codes\py\ocpde\networks\league\output\league.rand_to_best' \
+                                 r'.output.txt '
+league_current_to_best_output = r'D:\profile\2018\codes\py\ocpde\networks\league\output\league' \
+                                    r'.current_to_best.output.txt '
+league_no_crossover_output = r'D:\profile\2018\codes\py\ocpde\networks\league\output\league.no_crossover' \
+                                 r'.output.txt '
