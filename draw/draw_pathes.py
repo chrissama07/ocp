@@ -32,3 +32,17 @@ league_current_to_rand_output=r'C:\project\ocp\networks\league\output\league.cur
 league_no_crossover_output=r'C:\project\ocp\networks\league\output\league.no_crossover.output.txt'
 league_current_to_best_output=r'C:\project\ocp\networks\league\output\league.current_to_best.output.txt'
 league_blank_output=r'C:\project\ocp\networks\league\output\league.blank_output.txt'
+
+revolution_rand_to_best_output = r'C:\project\ocp\networks\revolution\output\revolution.rand_to_best.output.txt'
+revolution_rand2_output = r'C:\project\ocp\networks\revolution\output\revolution.rand2.output.txt'
+revolution_current_to_rand_output=r'C:\project\ocp\networks\revolution\output\revolution.current_to_rand.output.txt'
+revolution_no_crossover_output=r'C:\project\ocp\networks\revolution\output\revolution.no_crossover.output.txt'
+revolution_current_to_best_output=r'C:\project\ocp\networks\revolution\output\revolution.current_to_best.output.txt'
+revolution_blank_output=r'C:\project\ocp\networks\revolution\output\revolution.blank_output.txt'
+
+zachary_rand_to_best_output = r'C:\project\ocp\networks\zachary\output\zachary.rand_to_best.output.txt'
+zachary_rand2_output = r'C:\project\ocp\networks\zachary\output\zachary.rand2.output.txt'
+zachary_current_to_rand_output=r'C:\project\ocp\networks\zachary\output\zachary.current_to_rand.output.txt'
+zachary_no_crossover_output=r'C:\project\ocp\networks\zachary\output\zachary.no_crossover.output.txt'
+zachary_current_to_best_output=r'C:\project\ocp\networks\zachary\output\zachary.current_to_best.output.txt'
+zachary_blank_output=r'C:\project\ocp\networks\zachary\output\zachary.blank_output.txt'
