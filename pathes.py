@@ -1,3 +1,8 @@
+iceland_source = r'D:\profile\2018\codes\py\ocpde\networks\iceland\source\out.iceland'
+iceland_cost = r'D:\profile\2018\codes\py\ocpde\networks\iceland\iceland.cost.txt'
+iceland_curingrate = r'D:\profile\2018\codes\py\ocpde\networks\iceland\iceland.curingrate.txt'
+iceland_data = r'D:\profile\2018\codes\py\ocpde\networks\iceland\iceland.data.txt'
+iceland_parameter = r'D:\profile\2018\codes\py\ocpde\networks\iceland\iceland.parameter.txt'
 iceland_output = 'networks/iceland/output/iceland.output.txt'
 iceland_rand2_output = r'D:\profile\2018\codes\py\ocpde\networks\iceland\output\iceland.rand2.output.txt'
 iceland_rand_to_best_output = r'D:\profile\2018\codes\py\ocpde\networks\iceland\output\iceland.rand_to_best.output.txt'
