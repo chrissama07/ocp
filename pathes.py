@@ -5,6 +5,8 @@ iceland_current_to_best_output = r'D:\profile\2018\codes\py\ocpde\networks\icela
                                  r'.output.txt '
 iceland_no_crossover_output = r'D:\profile\2018\codes\py\ocpde\networks\iceland\output\iceland.no_crossover.output.txt'
 iceland_blank_ouptput = r'D:\profile\2018\codes\py\ocpde\networks\iceland\output\iceland.blank_output.txt'
+iceland_current_to_rand_output = r'D:\profile\2018\codes\py\ocpde\networks\iceland\output\iceland.current_to_rand' \
+                                 r'.output.txt '
 
 hiv_source = r'D:\profile\2018\codes\py\ocpde\networks\hiv\source\out.hiv'
 hiv_cost = r'D:\profile\2018\codes\py\ocpde\networks\hiv\hiv.cost.txt'
@@ -17,6 +19,7 @@ hiv_current_to_best_output = r'D:\profile\2018\codes\py\ocpde\networks\hiv\outpu
 hiv_rand_to_best_output = r'D:\profile\2018\codes\py\ocpde\networks\hiv\output\hiv.rand_to_best.output.txt'
 hiv_no_crossover_output = r'D:\profile\2018\codes\py\ocpde\networks\hiv\output\hiv.no_crossover.output.txt'
 hiv_blank_output = r'D:\profile\2018\codes\py\ocpde\networks\hiv\output\hiv.blank_output.txt'
+hiv_current_to_rand_output = r'D:\profile\2018\codes\py\ocpde\networks\hiv\output\hiv.current_to_rand.output.txt'
 
 highland_source = r'D:\profile\2018\codes\py\ocpde\networks\highland\source\out.highland'
 highland_cost = r'D:\profile\2018\codes\py\ocpde\networks\highland\highland.cost.txt'
@@ -50,6 +53,8 @@ revolution_current_to_best_output = r'D:\profile\2018\codes\py\ocpde\networks\re
 revolution_no_crossover_output = r'D:\profile\2018\codes\py\ocpde\networks\revolution\output\revolution.no_crossover' \
                                  r'.output.txt '
 revolution_blank_output = r'D:\profile\2018\codes\py\ocpde\networks\revolution\output\revolution.blank_output.txt'
+revolution_current_to_rand_output = r'D:\profile\2018\codes\py\ocpde\networks\revolution\output\revolution' \
+                                    r'.current_to_rand.output.txt '
 
 macaques_source = r'D:\profile\2018\codes\py\ocpde\networks\macaques\source\out.macaques'
 macaques_cost = r'D:\profile\2018\codes\py\ocpde\networks\macaques\macaques.cost.txt'
@@ -65,6 +70,8 @@ macaques_current_to_best_output = r'D:\profile\2018\codes\py\ocpde\networks\maca
 macaques_no_crossover_output = r'D:\profile\2018\codes\py\ocpde\networks\macaques\output\macaques.no_crossover' \
                                r'.output.txt '
 macaques_blank_output = r'D:\profile\2018\codes\py\ocpde\networks\macaques\output\macaques.blank_output.txt'
+macaques_current_to_rand_output = r'D:\profile\2018\codes\py\ocpde\networks\macaques\output\macaques.current_to_rand' \
+                                  r'.output.txt '
 
 highschool_source = r'D:\profile\2018\codes\py\ocpde\networks\highschool\source\out.highschool'
 highschool_cost = r'D:\profile\2018\codes\py\ocpde\networks\highschool\highschool.cost.txt'
@@ -80,6 +87,8 @@ highschool_current_to_best_output = r'D:\profile\2018\codes\py\ocpde\networks\hi
 highschool_no_crossover_output = r'D:\profile\2018\codes\py\ocpde\networks\highschool\output\highschool.no_crossover' \
                                  r'.output.txt '
 highschool_blank_output = r'D:\profile\2018\codes\py\ocpde\networks\highschool\output\highschool.blank_output.txt'
+highschool_current_to_rand_output = r'D:\profile\2018\codes\py\ocpde\networks\highschool\output\highschool' \
+                                    r'.current_to_rand.output.txt '
 
 zachary_source = r'D:\profile\2018\codes\py\ocpde\networks\zachary\source\out.zachary'
 zachary_cost = r'D:\profile\2018\codes\py\ocpde\networks\zachary\zachary.cost.txt'
@@ -110,6 +119,8 @@ windsurfers_current_to_best_output = r'D:\profile\2018\codes\py\ocpde\networks\w
 windsurfers_no_crossover_output = r'D:\profile\2018\codes\py\ocpde\networks\windsurfers\output\windsurfers.no_crossover' \
                                   r'.output.txt '
 windsurfers_blank_output = r'D:\profile\2018\codes\py\ocpde\networks\windsurfers\output\windsurfers.blank_output.txt'
+windsurfers_current_to_rand_output = r'D:\profile\2018\codes\py\ocpde\networks\windsurfers\output\windsurfers' \
+                                     r'.current_to_rand.output.txt '
 
 bundesliga_source = r'D:\profile\2018\codes\py\ocpde\networks\bundesliga\source\out.bundesliga'
 bundesliga_cost = r'D:\profile\2018\codes\py\ocpde\networks\bundesliga\bundesliga.cost.txt'
@@ -119,11 +130,11 @@ bundesliga_parameter = r'D:\profile\2018\codes\py\ocpde\networks\bundesliga\bund
 bundesliga_output = r'D:\profile\2018\codes\py\ocpde\networks\bundesliga\output\bundesliga.output.txt'
 bundesliga_rand2_output = r'D:\profile\2018\codes\py\ocpde\networks\bundesliga\output\bundesliga.rand2.output.txt'
 bundesliga_rand_to_best_output = r'D:\profile\2018\codes\py\ocpde\networks\bundesliga\output\bundesliga.rand_to_best' \
-                                  r'.output.txt '
+                                 r'.output.txt '
 bundesliga_current_to_best_output = r'D:\profile\2018\codes\py\ocpde\networks\bundesliga\output\bundesliga' \
-                                     r'.current_to_best.output.txt '
+                                    r'.current_to_best.output.txt '
 bundesliga_no_crossover_output = r'D:\profile\2018\codes\py\ocpde\networks\bundesliga\output\bundesliga.no_crossover' \
-                                  r'.output.txt '
+                                 r'.output.txt '
 bundesliga_blank_output = r'D:\profile\2018\codes\py\ocpde\networks\bundesliga\output\bundesliga.blank_output.txt'
 bundesliga_current_to_rand_output = r'D:\profile\2018\codes\py\ocpde\networks\bundesliga\output\bundesliga' \
                                     r'.current_to_rand.output.txt '
@@ -136,9 +147,11 @@ league_parameter = r'D:\profile\2018\codes\py\ocpde\networks\league\league.param
 league_output = r'D:\profile\2018\codes\py\ocpde\networks\league\output\league.output.txt'
 league_rand2_output = r'D:\profile\2018\codes\py\ocpde\networks\league\output\league.rand2.output.txt'
 league_rand_to_best_output = r'D:\profile\2018\codes\py\ocpde\networks\league\output\league.rand_to_best' \
-                                 r'.output.txt '
+                             r'.output.txt '
 league_current_to_best_output = r'D:\profile\2018\codes\py\ocpde\networks\league\output\league' \
-                                    r'.current_to_best.output.txt '
+                                r'.current_to_best.output.txt '
 league_no_crossover_output = r'D:\profile\2018\codes\py\ocpde\networks\league\output\league.no_crossover' \
-                                 r'.output.txt '
+                             r'.output.txt '
 league_blank_output = r'D:\profile\2018\codes\py\ocpde\networks\league\output\league.blank_output.txt'
+league_current_to_rand_output = r'D:\profile\2018\codes\py\ocpde\networks\league\output\league.current_to_rand.output' \
+                                r'.txt '
