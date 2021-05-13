@@ -125,6 +125,8 @@ bundesliga_current_to_best_output = r'D:\profile\2018\codes\py\ocpde\networks\bu
 bundesliga_no_crossover_output = r'D:\profile\2018\codes\py\ocpde\networks\bundesliga\output\bundesliga.no_crossover' \
                                   r'.output.txt '
 bundesliga_blank_output = r'D:\profile\2018\codes\py\ocpde\networks\bundesliga\output\bundesliga.blank_output.txt'
+bundesliga_current_to_rand_output = r'D:\profile\2018\codes\py\ocpde\networks\bundesliga\output\bundesliga' \
+                                    r'.current_to_rand.output.txt '
 
 league_source = r'D:\profile\2018\codes\py\ocpde\networks\league\source\out.league'
 league_cost = r'D:\profile\2018\codes\py\ocpde\networks\league\league.cost.txt'
