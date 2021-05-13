@@ -33,6 +33,8 @@ highland_current_to_best_output = r'D:\profile\2018\codes\py\ocpde\networks\high
 highland_no_crossover_output = r'D:\profile\2018\codes\py\ocpde\networks\highland\output\highland' \
                                r'.no_crossover.output.txt '
 highland_blank_output = r'D:\profile\2018\codes\py\ocpde\networks\highland\output\highland.blank_output.txt'
+highland_current_to_rand_output = r'D:\profile\2018\codes\py\ocpde\networks\highland\output\highland.current_to_rand' \
+                                  r'.output.txt '
 
 revolution_source = r'D:\profile\2018\codes\py\ocpde\networks\revolution\source\out.revolution'
 revolution_cost = r'D:\profile\2018\codes\py\ocpde\networks\revolution\revolution.cost.txt'
