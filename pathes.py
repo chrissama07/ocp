@@ -104,6 +104,8 @@ zachary_current_to_best_output = r'D:\profile\2018\codes\py\ocpde\networks\zacha
 zachary_no_crossover_output = r'D:\profile\2018\codes\py\ocpde\networks\zachary\output\zachary.no_crossover' \
                               r'.output.txt '
 zachary_blank_output = r'D:\profile\2018\codes\py\ocpde\networks\zachary\output\zachary.blank_output.txt'
+zachary_current_to_rand_output = r'D:\profile\2018\codes\py\ocpde\networks\zachary\output\zachary.current_to_rand' \
+                                 r'.output.txt '
 
 windsurfers_source = r'D:\profile\2018\codes\py\ocpde\networks\windsurfers\source\out.windsurfers'
 windsurfers_cost = r'D:\profile\2018\codes\py\ocpde\networks\windsurfers\windsurfers.cost.txt'
