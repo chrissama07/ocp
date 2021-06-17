@@ -1,6 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 import pathes
+from draw import draw_pathes
 
 name_list = ['current_to_rand', 'rand2', 'rand_to_best', 'current_to_best', 'no_crossover']
 # 柱高信息
@@ -17,8 +18,6 @@ for line in lines:
     numbers = [float(i) for i in line.split()]
     Y[i] = numbers[1]
     Y1[i] = numbers[2]
-    if Y1[i] >= Y[i]:
-        Y1[i] = 2 * Y[i] - Y1[i]
     i += 1
 
 X = list(range(len(Y)))
@@ -41,7 +40,7 @@ plt.legend()
 plt.xlabel('Different Strategy', size=15)
 plt.ylabel('Objective function value', size=15)
 
-plt.savefig(r'D:\profile\2018\codes\py\ocpde\draw\pictures\bar\highschool_2')
+plt.savefig(draw_pathes.highschool_pictures_bar_1)
 
 plt.show()
 

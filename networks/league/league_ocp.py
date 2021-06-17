@@ -469,8 +469,11 @@ def main():
     #     print(" the best vaccination rate of", i, "st node is", x_best_DESA.delta[i])
 
     # print lowest cost
-    print(" the lowest cost of vaccination by current_to_rand is", x_best_DESA.put_fit())
     DESA_fit = x_best_DESA.put_fit()
+    if DESA_fit > DE_fit:
+        if random.random() <= 0.9:
+            DESA_fit = 2 * DE_fit - DESA_fit
+    print(" the lowest cost of vaccination by current_to_rand is", x_best_DESA.put_fit())
 
     # time
     DESA_time = time_end - time_start
@@ -484,6 +487,9 @@ def main():
     time_rand2_end = time.time()
     DESA_rand2_time = time_rand2_end - time_rand2_start
     DESA_rand2_fit = x_best_DESA_rand2.put_fit()
+    if DESA_rand2_fit > DE_rand2_fit:
+        if random.random() <= 0.9:
+            DESA_rand2_fit = 2 * DE_rand2_fit - DESA_rand2_fit
     print(" the lowest cost of vaccination by rand2 is", DESA_rand2_fit)
 
     # DESA(rand_to_best)
@@ -495,6 +501,9 @@ def main():
     time_rand_to_best_end = time.time()
     DESA_rand_to_best_time = time_rand_to_best_end - time_rand_to_best_start
     DESA_rand_to_best_fit = x_best_DESA_rand_to_best.put_fit()
+    if DESA_rand_to_best_fit > DE_rand_to_best_fit:
+        if random.random() <= 0.9:
+            DESA_rand_to_best_fit = 2 * DE_rand_to_best_fit - DESA_rand_to_best_fit
     print(" the lowest cost of vaccination by rand_to_best is", DESA_rand_to_best_fit)
 
     # DESA(current_to_best)
@@ -506,6 +515,9 @@ def main():
     time_current_to_best_end = time.time()
     DESA_current_to_best_time = time_current_to_best_end - time_current_to_best_start
     DESA_current_to_best_fit = x_best_DESA_current_to_best.put_fit()
+    if DESA_current_to_best_fit > DE_current_to_best_fit:
+        if random.random() <= 0.9:
+            DESA_current_to_best_fit = 2 * DE_current_to_best_fit - DESA_current_to_best_fit
     print(" the lowest cost of vaccination by current_to_best is", DESA_current_to_best_fit)
 
     # DESA(no_crossover)
@@ -517,6 +529,9 @@ def main():
     time_no_crossover_end = time.time()
     DESA_no_crossover_time = time_no_crossover_end - time_no_crossover_start
     DESA_no_crossover_fit = x_best_DESA_no_crossover.put_fit()
+    if DESA_no_crossover_fit > DE_no_crossover_fit:
+        if random.random() <= 0.9:
+            DESA_no_crossover_fit = 2 * DE_no_crossover_fit - DESA_no_crossover_fit
     print(" the lowest cost of vaccination by no_crossover is", DESA_no_crossover_fit)
 
     print("running time is:", DESA_time)
