@@ -38,12 +38,13 @@ plt.ylabel('Objective function value', size=15)
 plt.xticks([i for i in range(0, 105, 5)])
 # plt.xlabel_params(labelsize=23)
 ax2=fig.add_subplot(1,2,2)
-x1= [i for i in range(20, 105, 5)]
-y=y[4:]
-y1=y1[4:]
-y2=y2[4:]
-y3=y3[4:]
-y4=y4[4:]
+x1= [i for i in range(10, 60, 5)]
+y=y[2:12]
+y1=y1[2:12]
+y2=y2[2:12]
+y3=y3[2:12]
+y4=y4[2:12]
+plt.xticks([i for i in range(10, 60, 5)])
 #plt.figure(figsize=(8, 6))
 plt.title('highland_subgraph', size=18)
 # plt.plot(x, y0, label='blank', linewidth=1, color='black')

@@ -25,19 +25,20 @@ plt.xlabel('Iteration', size=15)
 plt.ylabel('Objective function value', size=15)
 plt.xticks([i for i in range(0, 105, 5)])
 ax2=fig.add_subplot(1,2,2)
-x1= [i for i in range(5,105, 5)]
-y=y[1:]
-y1=y1[1:]
-y2=y2[1:]
-y3=y3[1:]
-y4=y4[1:]
+x1= [i for i in range(5, 60, 5)]
+y=y[1:12]
+y1=y1[1:12]
+y2=y2[1:12]
+y3=y3[1:12]
+y4=y4[1:12]
+plt.xticks([i for i in range(5, 60, 5)])
 plt.title('windsurfers_subgraph', size=18)
 plt.plot(x1, y, label='rand_to_best', linewidth=1, color='r', marker='o')  # linestyle='dotted'
 plt.plot(x1, y1, label='rand2', linewidth=1, color='b', marker='*')  # linestyle='dashed'
 plt.plot(x1, y2, label='current_to_rand', linewidth=1, color='g', marker='^')
 plt.plot(x1, y4, label='current_to_best', linewidth=1, color='y', marker='x')
 plt.plot(x1, y3, label='no_crossover', linewidth=1, color='indigo', marker='.')
-plt.xticks([i for i in range(5, 105, 5)])
+
 plt.legend()  # 给label用的
 plt.grid(alpha=0.4, linestyle='--')
 plt.xlabel('Iteration', size=15)
