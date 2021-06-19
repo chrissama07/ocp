@@ -25,6 +25,8 @@ hiv_rand_to_best_output = r'D:\profile\codes\python_projects\ocp\networks\hiv\ou
 hiv_no_crossover_output = r'D:\profile\codes\python_projects\ocp\networks\hiv\output\hiv.no_crossover.output.txt'
 hiv_blank_output = r'D:\profile\codes\python_projects\ocp\networks\hiv\output\hiv.blank_output.txt'
 hiv_current_to_rand_output = r'D:\profile\codes\python_projects\ocp\networks\hiv\output\hiv.current_to_rand.output.txt'
+hiv_initial = r'D:\profile\codes\python_projects\ocp\networks\hiv\hiv.initial.txt'
+hiv_TS_output = r'D:\profile\codes\python_projects\ocp\networks\hiv\output\hiv.TS.output.txt'
 
 highland_source = r'D:\profile\codes\python_projects\ocp\networks\highland\source\out.highland'
 highland_cost = r'D:\profile\codes\python_projects\ocp\networks\highland\highland.cost.txt'
@@ -43,6 +45,8 @@ highland_no_crossover_output = r'D:\profile\codes\python_projects\ocp\networks\h
 highland_blank_output = r'D:\profile\codes\python_projects\ocp\networks\highland\output\highland.blank_output.txt'
 highland_current_to_rand_output = r'D:\profile\codes\python_projects\ocp\networks\highland\output\highland.current_to_rand' \
                                   r'.output.txt '
+highland_initial = r'D:\profile\codes\python_projects\ocp\networks\highland\highland.initial.txt'
+highland_TS_output = r'D:\profile\codes\python_projects\ocp\networks\highland\output\highland.TS.output.txt'
 
 revolution_source = r'D:\profile\codes\python_projects\ocp\networks\revolution\source\out.revolution'
 revolution_cost = r'D:\profile\codes\python_projects\ocp\networks\revolution\revolution.cost.txt'
@@ -60,6 +64,8 @@ revolution_no_crossover_output = r'D:\profile\codes\python_projects\ocp\networks
 revolution_blank_output = r'D:\profile\codes\python_projects\ocp\networks\revolution\output\revolution.blank_output.txt'
 revolution_current_to_rand_output = r'D:\profile\codes\python_projects\ocp\networks\revolution\output\revolution' \
                                     r'.current_to_rand.output.txt '
+revolution_initial = r'D:\profile\codes\python_projects\ocp\networks\revolution\revolution.initial.txt'
+revolution_TS_output = r'D:\profile\codes\python_projects\ocp\networks\revolution\output\revolution.TS.output.txt'
 
 macaques_source = r'D:\profile\codes\python_projects\ocp\networks\macaques\source\out.macaques'
 macaques_cost = r'D:\profile\codes\python_projects\ocp\networks\macaques\macaques.cost.txt'
@@ -77,6 +83,8 @@ macaques_no_crossover_output = r'D:\profile\codes\python_projects\ocp\networks\m
 macaques_blank_output = r'D:\profile\codes\python_projects\ocp\networks\macaques\output\macaques.blank_output.txt'
 macaques_current_to_rand_output = r'D:\profile\codes\python_projects\ocp\networks\macaques\output\macaques.current_to_rand' \
                                   r'.output.txt '
+macaques_initial = r'D:\profile\codes\python_projects\ocp\networks\macaques\macaques.initial.txt'
+macaques_TS_output = r'D:\profile\codes\python_projects\ocp\networks\macaques\output\macaques.TS.output.txt'
 
 highschool_source = r'D:\profile\codes\python_projects\ocp\networks\highschool\source\out.highschool'
 highschool_cost = r'D:\profile\codes\python_projects\ocp\networks\highschool\highschool.cost.txt'
@@ -94,6 +102,8 @@ highschool_no_crossover_output = r'D:\profile\codes\python_projects\ocp\networks
 highschool_blank_output = r'D:\profile\codes\python_projects\ocp\networks\highschool\output\highschool.blank_output.txt'
 highschool_current_to_rand_output = r'D:\profile\codes\python_projects\ocp\networks\highschool\output\highschool' \
                                     r'.current_to_rand.output.txt '
+highscool_initial = r'D:\profile\codes\python_projects\ocp\networks\highscool\highscool.initial.txt'
+highscool_TS_output = r'D:\profile\codes\python_projects\ocp\networks\highscool\output\highscool.TS.output.txt'
 
 zachary_source = r'D:\profile\codes\python_projects\ocp\networks\zachary\source\out.zachary'
 zachary_cost = r'D:\profile\codes\python_projects\ocp\networks\zachary\zachary.cost.txt'
@@ -111,6 +121,8 @@ zachary_no_crossover_output = r'D:\profile\codes\python_projects\ocp\networks\za
 zachary_blank_output = r'D:\profile\codes\python_projects\ocp\networks\zachary\output\zachary.blank_output.txt'
 zachary_current_to_rand_output = r'D:\profile\codes\python_projects\ocp\networks\zachary\output\zachary.current_to_rand' \
                                  r'.output.txt '
+zachary_initial = r'D:\profile\codes\python_projects\ocp\networks\zachary\zachary.initial.txt'
+zachary_TS_output = r'D:\profile\codes\python_projects\ocp\networks\zachary\output\zachary.TS.output.txt'
 
 windsurfers_source = r'D:\profile\codes\python_projects\ocp\networks\windsurfers\source\out.windsurfers'
 windsurfers_cost = r'D:\profile\codes\python_projects\ocp\networks\windsurfers\windsurfers.cost.txt'
@@ -128,6 +140,8 @@ windsurfers_no_crossover_output = r'D:\profile\codes\python_projects\ocp\network
 windsurfers_blank_output = r'D:\profile\codes\python_projects\ocp\networks\windsurfers\output\windsurfers.blank_output.txt'
 windsurfers_current_to_rand_output = r'D:\profile\codes\python_projects\ocp\networks\windsurfers\output\windsurfers' \
                                      r'.current_to_rand.output.txt '
+windsurfers_initial = r'D:\profile\codes\python_projects\ocp\networks\windsurfers\windsurfers.initial.txt'
+windsurfers_TS_output = r'D:\profile\codes\python_projects\ocp\networks\windsurfers\output\windsurfers.TS.output.txt'
 
 bundesliga_source = r'D:\profile\codes\python_projects\ocp\networks\bundesliga\source\out.bundesliga'
 bundesliga_cost = r'D:\profile\codes\python_projects\ocp\networks\bundesliga\bundesliga.cost.txt'
@@ -145,6 +159,8 @@ bundesliga_no_crossover_output = r'D:\profile\codes\python_projects\ocp\networks
 bundesliga_blank_output = r'D:\profile\codes\python_projects\ocp\networks\bundesliga\output\bundesliga.blank_output.txt'
 bundesliga_current_to_rand_output = r'D:\profile\codes\python_projects\ocp\networks\bundesliga\output\bundesliga' \
                                     r'.current_to_rand.output.txt '
+bundesliga_initial = r'D:\profile\codes\python_projects\ocp\networks\bundesliga\bundesliga.initial.txt'
+bundesliga_TS_output = r'D:\profile\codes\python_projects\ocp\networks\bundesliga\output\bundesliga.TS.output.txt'
 
 league_source = r'D:\profile\codes\python_projects\ocp\networks\league\source\out.league'
 league_cost = r'D:\profile\codes\python_projects\ocp\networks\league\league.cost.txt'
@@ -162,3 +178,5 @@ league_no_crossover_output = r'D:\profile\codes\python_projects\ocp\networks\lea
 league_blank_output = r'D:\profile\codes\python_projects\ocp\networks\league\output\league.blank_output.txt'
 league_current_to_rand_output = r'D:\profile\codes\python_projects\ocp\networks\league\output\league.current_to_rand.output' \
                                 r'.txt '
+league_initial = r'D:\profile\codes\python_projects\ocp\networks\league\league.initial.txt'
+league_TS_output = r'D:\profile\codes\python_projects\ocp\networks\league\output\league.TS.output.txt'
