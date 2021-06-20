@@ -447,6 +447,9 @@ def main():
         if blank_fit < p.put_fit():
             blank_fit = p.put_fit()
 
+    print(x_list[0].put_delta())
+    np.savetxt(pathes.zachary_initial, x_list[0].put_delta())
+
     # blank fit
     print("blank fit:", blank_fit)
 

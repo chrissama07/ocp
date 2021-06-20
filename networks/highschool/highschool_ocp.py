@@ -448,6 +448,8 @@ def main():
         if blank_fit < p.put_fit():
             blank_fit = p.put_fit()
 
+    np.savetxt(pathes.highschool_initial, x_list[0].put_delta())
+
     # blank fit
     print("blank fit:", blank_fit)
 

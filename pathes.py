@@ -102,8 +102,8 @@ highschool_no_crossover_output = r'D:\profile\codes\python_projects\ocp\networks
 highschool_blank_output = r'D:\profile\codes\python_projects\ocp\networks\highschool\output\highschool.blank_output.txt'
 highschool_current_to_rand_output = r'D:\profile\codes\python_projects\ocp\networks\highschool\output\highschool' \
                                     r'.current_to_rand.output.txt '
-highscool_initial = r'D:\profile\codes\python_projects\ocp\networks\highscool\highscool.initial.txt'
-highscool_TS_output = r'D:\profile\codes\python_projects\ocp\networks\highscool\output\highscool.TS.output.txt'
+highschool_initial = r'D:\profile\codes\python_projects\ocp\networks\highschool\highschool.initial.txt'
+highschool_TS_output = r'D:\profile\codes\python_projects\ocp\networks\highschool\output\highschool.TS.output.txt'
 
 zachary_source = r'D:\profile\codes\python_projects\ocp\networks\zachary\source\out.zachary'
 zachary_cost = r'D:\profile\codes\python_projects\ocp\networks\zachary\zachary.cost.txt'

@@ -21,7 +21,7 @@ first_delta = np.loadtxt(pathes.bundesliga_initial)
 
 """:parameter for TS"""
 T_TS = 100
-d_TS = 0.0005
+d_TS = 0.0003
 num_TS = 5
 
 interval = 5
