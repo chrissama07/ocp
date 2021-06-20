@@ -11,6 +11,7 @@ y2 = np.loadtxt(draw_pathes.macaques_current_to_rand_output)
 y3 = np.loadtxt(draw_pathes.macaques_no_crossover_output)
 y4 = np.loadtxt(draw_pathes.macaques_current_to_best_output)
 y5 = np.loadtxt(pathes.macaques_TS_output)
+y6 = np.loadtxt(pathes.macaques_SA_output)
 # for i in range(20):
 #     with open(str[i], 'r') as f:
 #         content = f.read()
@@ -33,6 +34,7 @@ plt.plot(x, y2, label='current_to_rand', linewidth=1, color='g', marker='^')
 plt.plot(x, y4, label='current_to_best', linewidth=1, color='y', marker='x')
 plt.plot(x, y3, label='no_crossover', linewidth=1, color='indigo', marker='.')
 plt.plot(x, y5, label='TS', linewidth=1, color='indigo', marker='.')
+plt.plot(x, y6, label='SA', linewidth=1, color='y', marker='x')
 
 plt.legend()  # 给label用的
 plt.grid(alpha=0.4, linestyle='--')

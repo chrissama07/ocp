@@ -21,7 +21,7 @@ first_delta = np.loadtxt(pathes.highland_initial)
 
 """:parameter for TS"""
 T_TS = 100
-d_TS = 0.0002
+d_TS = 0.0005
 num_TS = 5
 
 interval = 5

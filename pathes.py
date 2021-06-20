@@ -27,6 +27,7 @@ hiv_blank_output = r'D:\profile\codes\python_projects\ocp\networks\hiv\output\hi
 hiv_current_to_rand_output = r'D:\profile\codes\python_projects\ocp\networks\hiv\output\hiv.current_to_rand.output.txt'
 hiv_initial = r'D:\profile\codes\python_projects\ocp\networks\hiv\hiv.initial.txt'
 hiv_TS_output = r'D:\profile\codes\python_projects\ocp\networks\hiv\output\hiv.TS.output.txt'
+hiv_SA_output = r'D:\profile\codes\python_projects\ocp\networks\hiv\output\hiv.SA.output.txt'
 
 highland_source = r'D:\profile\codes\python_projects\ocp\networks\highland\source\out.highland'
 highland_cost = r'D:\profile\codes\python_projects\ocp\networks\highland\highland.cost.txt'
@@ -47,6 +48,7 @@ highland_current_to_rand_output = r'D:\profile\codes\python_projects\ocp\network
                                   r'.output.txt '
 highland_initial = r'D:\profile\codes\python_projects\ocp\networks\highland\highland.initial.txt'
 highland_TS_output = r'D:\profile\codes\python_projects\ocp\networks\highland\output\highland.TS.output.txt'
+highland_SA_output = r'D:\profile\codes\python_projects\ocp\networks\highland\output\highland.SA.output.txt'
 
 revolution_source = r'D:\profile\codes\python_projects\ocp\networks\revolution\source\out.revolution'
 revolution_cost = r'D:\profile\codes\python_projects\ocp\networks\revolution\revolution.cost.txt'
@@ -66,6 +68,7 @@ revolution_current_to_rand_output = r'D:\profile\codes\python_projects\ocp\netwo
                                     r'.current_to_rand.output.txt '
 revolution_initial = r'D:\profile\codes\python_projects\ocp\networks\revolution\revolution.initial.txt'
 revolution_TS_output = r'D:\profile\codes\python_projects\ocp\networks\revolution\output\revolution.TS.output.txt'
+revolution_SA_output = r'D:\profile\codes\python_projects\ocp\networks\revolution\output\revolution.SA.output.txt'
 
 macaques_source = r'D:\profile\codes\python_projects\ocp\networks\macaques\source\out.macaques'
 macaques_cost = r'D:\profile\codes\python_projects\ocp\networks\macaques\macaques.cost.txt'
@@ -85,6 +88,7 @@ macaques_current_to_rand_output = r'D:\profile\codes\python_projects\ocp\network
                                   r'.output.txt '
 macaques_initial = r'D:\profile\codes\python_projects\ocp\networks\macaques\macaques.initial.txt'
 macaques_TS_output = r'D:\profile\codes\python_projects\ocp\networks\macaques\output\macaques.TS.output.txt'
+macaques_SA_output = r'D:\profile\codes\python_projects\ocp\networks\macaques\output\macaques.SA.output.txt'
 
 highschool_source = r'D:\profile\codes\python_projects\ocp\networks\highschool\source\out.highschool'
 highschool_cost = r'D:\profile\codes\python_projects\ocp\networks\highschool\highschool.cost.txt'
@@ -104,6 +108,7 @@ highschool_current_to_rand_output = r'D:\profile\codes\python_projects\ocp\netwo
                                     r'.current_to_rand.output.txt '
 highschool_initial = r'D:\profile\codes\python_projects\ocp\networks\highschool\highschool.initial.txt'
 highschool_TS_output = r'D:\profile\codes\python_projects\ocp\networks\highschool\output\highschool.TS.output.txt'
+highschool_SA_output = r'D:\profile\codes\python_projects\ocp\networks\highschool\output\highschool.SA.output.txt'
 
 zachary_source = r'D:\profile\codes\python_projects\ocp\networks\zachary\source\out.zachary'
 zachary_cost = r'D:\profile\codes\python_projects\ocp\networks\zachary\zachary.cost.txt'
@@ -123,6 +128,7 @@ zachary_current_to_rand_output = r'D:\profile\codes\python_projects\ocp\networks
                                  r'.output.txt '
 zachary_initial = r'D:\profile\codes\python_projects\ocp\networks\zachary\zachary.initial.txt'
 zachary_TS_output = r'D:\profile\codes\python_projects\ocp\networks\zachary\output\zachary.TS.output.txt'
+zachary_SA_output = r'D:\profile\codes\python_projects\ocp\networks\zachary\output\zachary.SA.output.txt'
 
 windsurfers_source = r'D:\profile\codes\python_projects\ocp\networks\windsurfers\source\out.windsurfers'
 windsurfers_cost = r'D:\profile\codes\python_projects\ocp\networks\windsurfers\windsurfers.cost.txt'
@@ -142,6 +148,7 @@ windsurfers_current_to_rand_output = r'D:\profile\codes\python_projects\ocp\netw
                                      r'.current_to_rand.output.txt '
 windsurfers_initial = r'D:\profile\codes\python_projects\ocp\networks\windsurfers\windsurfers.initial.txt'
 windsurfers_TS_output = r'D:\profile\codes\python_projects\ocp\networks\windsurfers\output\windsurfers.TS.output.txt'
+windsurfers_SA_output = r'D:\profile\codes\python_projects\ocp\networks\windsurfers\output\windsurfers.SA.output.txt'
 
 bundesliga_source = r'D:\profile\codes\python_projects\ocp\networks\bundesliga\source\out.bundesliga'
 bundesliga_cost = r'D:\profile\codes\python_projects\ocp\networks\bundesliga\bundesliga.cost.txt'
@@ -161,6 +168,7 @@ bundesliga_current_to_rand_output = r'D:\profile\codes\python_projects\ocp\netwo
                                     r'.current_to_rand.output.txt '
 bundesliga_initial = r'D:\profile\codes\python_projects\ocp\networks\bundesliga\bundesliga.initial.txt'
 bundesliga_TS_output = r'D:\profile\codes\python_projects\ocp\networks\bundesliga\output\bundesliga.TS.output.txt'
+bundesliga_SA_output = r'D:\profile\codes\python_projects\ocp\networks\bundesliga\output\bundesliga.SA.output.txt'
 
 league_source = r'D:\profile\codes\python_projects\ocp\networks\league\source\out.league'
 league_cost = r'D:\profile\codes\python_projects\ocp\networks\league\league.cost.txt'
@@ -180,3 +188,4 @@ league_current_to_rand_output = r'D:\profile\codes\python_projects\ocp\networks\
                                 r'.txt '
 league_initial = r'D:\profile\codes\python_projects\ocp\networks\league\league.initial.txt'
 league_TS_output = r'D:\profile\codes\python_projects\ocp\networks\league\output\league.TS.output.txt'
+league_SA_output = r'D:\profile\codes\python_projects\ocp\networks\league\output\league.SA.output.txt'
