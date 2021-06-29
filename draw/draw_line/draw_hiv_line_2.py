@@ -28,13 +28,13 @@ ax1=fig.add_subplot(1,2,1)
 #plt.figure(figsize=(8, 6))
 plt.title('hiv', size=18)
 # plt.plot(x, y0, label='blank', linewidth=1, color='black')
-plt.plot(x, y, label='rand_to_best', linewidth=1, color='r', marker='o')  # linestyle='dotted'
+# plt.plot(x, y, label='rand_to_best', linewidth=1, color='r', marker='o')  # linestyle='dotted'
 plt.plot(x, y1, label='rand2', linewidth=1, color='b', marker='*')  # linestyle='dashed'
-plt.plot(x, y2, label='current_to_rand', linewidth=1, color='g', marker='^')
-plt.plot(x, y4, label='current_to_best', linewidth=1, color='y', marker='x')
-plt.plot(x, y3, label='no_crossover', linewidth=1, color='indigo', marker='.')
+# plt.plot(x, y2, label='current_to_rand', linewidth=1, color='g', marker='^')
+plt.plot(x, y4, label='current_to_best', linewidth=1, color='g', marker='^')
+# plt.plot(x, y3, label='no_crossover', linewidth=1, color='indigo', marker='.')
 plt.plot(x, y5, label='TS', linewidth=1, color='indigo', marker='.')
-plt.plot(x, y6, label='SA', linewidth=1, color='y', marker='x')
+plt.plot(x, y6, label='SA', linewidth=1, color= 'y', marker='x')
 
 plt.legend()  # 给label用的
 plt.grid(alpha=0.4, linestyle='--')
@@ -43,21 +43,22 @@ plt.ylabel('Objective function value', size=15)
 plt.xticks([i for i in range(0, 105, 5)])
 # plt.xlabel_params(labelsize=23)
 ax2=fig.add_subplot(1,2,2)
-x1= [i for i in range(10, 60, 5)]
-y=y[2:12]
-y1=y1[2:12]
-y2=y2[2:12]
-y3=y3[2:12]
-y4=y4[2:12]
-plt.xticks([i for i in range(10, 60, 5)])
+x1= [i for i in range(0, 50, 5)]
+# y=y[2:12]
+y1=y1[0:10]
+y4=y4[0:10]
+y5=y5[0:10]
+y6=y6[0:10]
+plt.xticks([i for i in range(0, 50, 5)])
 #plt.figure(figsize=(8, 6))
 plt.title('hiv_subgraph', size=18)
 # plt.plot(x, y0, label='blank', linewidth=1, color='black')
-plt.plot(x1, y, label='rand_to_best', linewidth=1, color='r', marker='o')  # linestyle='dotted'
 plt.plot(x1, y1, label='rand2', linewidth=1, color='b', marker='*')  # linestyle='dashed'
-plt.plot(x1, y2, label='current_to_rand', linewidth=1, color='g', marker='^')
-plt.plot(x1, y4, label='current_to_best', linewidth=1, color='y', marker='x')
-plt.plot(x1, y3, label='no_crossover', linewidth=1, color='indigo', marker='.')
+# plt.plot(x, y2, label='current_to_rand', linewidth=1, color='g', marker='^')
+plt.plot(x1, y4, label='current_to_best', linewidth=1, color='g', marker='^')
+# plt.plot(x, y3, label='no_crossover', linewidth=1, color='indigo', marker='.')
+plt.plot(x1, y5, label='TS', linewidth=1, color='indigo', marker='.')
+plt.plot(x1, y6, label='SA', linewidth=1, color= 'y', marker='x')
 
 plt.legend()  # 给label用的
 plt.grid(alpha=0.4, linestyle='--')
