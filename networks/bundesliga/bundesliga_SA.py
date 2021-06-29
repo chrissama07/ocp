@@ -25,9 +25,9 @@ T_max = 100000
 T_min = 1
 L = 10  # iteration in each temperature
 # area
-d_max = 0.005  # upper bound
-d_min = -0.005  # lower bound
-m = 5  # length of unfeasible solution list
+d_max = 0.01  # upper bound
+d_min = -0.01  # lower bound
+m = 10  # length of unfeasible solution list
 a = 0.9  # Coefficient of variation of T
 unfeasible_list = []
 
