@@ -64,5 +64,5 @@ plt.legend()  # 给label用的
 plt.grid(alpha=0.4, linestyle='--')
 plt.xlabel('Iteration', size=15)
 plt.ylabel('Objective function value', size=15)
-plt.savefig(draw_pathes.hiv_pictures_linechart_1)
+plt.savefig(draw_pathes.hiv_pictures_linechart_2)
 plt.show()

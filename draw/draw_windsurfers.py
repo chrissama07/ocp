@@ -22,7 +22,7 @@ plt.plot(x, y3, label='no_crossover', linewidth=1, color='indigo', marker='.')
 plt.legend()  # 给label用的
 plt.grid(alpha=0.4, linestyle='--')
 plt.xlabel('Iteration', size=15)
-plt.ylabel('Objective function value', size=15)
+plt.ylabel('Lowest cost of vaccination', size=15)
 plt.xticks([i for i in range(0, 105, 5)])
 ax2=fig.add_subplot(1,2,2)
 x1= [i for i in range(5, 60, 5)]
@@ -42,6 +42,6 @@ plt.plot(x1, y3, label='no_crossover', linewidth=1, color='indigo', marker='.')
 plt.legend()  # 给label用的
 plt.grid(alpha=0.4, linestyle='--')
 plt.xlabel('Iteration', size=15)
-plt.ylabel('Objective function value', size=15)
+plt.ylabel('Lowest cost of vaccination', size=15)
 plt.savefig(draw_pathes.windsurfers_pictures_linechart_1)
 plt.show()

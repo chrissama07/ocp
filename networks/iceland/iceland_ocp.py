@@ -552,11 +552,11 @@ def main():
             DESA_no_crossover_fit))
     f.close()
 
-    np.savetxt(pathes.iceland_current_to_rand_output, delta_list)
-    np.savetxt(pathes.iceland_rand2_output, delta_list_rand2)
-    np.savetxt(pathes.iceland_rand_to_best_output, delta_list_rand_to_best)
-    np.savetxt(pathes.iceland_current_to_best_output, delta_list_current_to_best)
-    np.savetxt(pathes.iceland_no_crossover_output, delta_list_no_crossover)
+    # np.savetxt(pathes.iceland_current_to_rand_output, delta_list)
+    # np.savetxt(pathes.iceland_rand2_output, delta_list_rand2)
+    # np.savetxt(pathes.iceland_rand_to_best_output, delta_list_rand_to_best)
+    # np.savetxt(pathes.iceland_current_to_best_output, delta_list_current_to_best)
+    # np.savetxt(pathes.iceland_no_crossover_output, delta_list_no_crossover)
 
 
 main()

@@ -37,8 +37,8 @@ for i in range(len(X)):
     X[i] = X[i] + width
 plt.bar(X, Y1, width=width, label='DESA', tick_label=name_list, fc='r')
 plt.legend()
-plt.xlabel('Different Strategy', size=15)
-plt.ylabel('Objective function value', size=15)
+plt.xlabel('Contrast in Different Strategies', size=15)
+plt.ylabel('Lowest cost of vaccination', size=15)
 
 plt.savefig(draw_pathes.bundesliga_pictures_bar_1)
 
