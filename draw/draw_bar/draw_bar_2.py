@@ -42,7 +42,7 @@ fig=plt.figure(figsize=(9, 7))
 
 plt.title('bundesliga', size=20)
 
-plt.ylim(int(min(Y1)), int(max(Y) + 1))
+plt.ylim(60, int(max(Y2) + 1))
 # plt.yticks(range(int(min(Y1)), int(max(Y) + 3), 1))
 
 plt.bar(X, Y, width=width, label='DE', tick_label=name_list, fc='indigo')
