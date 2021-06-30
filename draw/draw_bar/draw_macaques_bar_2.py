@@ -41,6 +41,7 @@ plt.xlabel('Different Algorithm', size=15)
 plt.ylabel('Lowest cost of vaccination', size=15)
 plt.ylim(360, 440)
 plt.xlim(-1, 3)
+plt.xticks([])
 plt.savefig(draw_pathes.macaques_pictures_bar_2)
 
 plt.show()
