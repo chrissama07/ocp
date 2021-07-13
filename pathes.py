@@ -189,3 +189,83 @@ league_current_to_rand_output = r'D:\profile\codes\python_projects\ocp\networks\
 league_initial = r'D:\profile\codes\python_projects\ocp\networks\league\league.initial.txt'
 league_TS_output = r'D:\profile\codes\python_projects\ocp\networks\league\output\league.TS.output.txt'
 league_SA_output = r'D:\profile\codes\python_projects\ocp\networks\league\output\league.SA.output.txt'
+
+escorts_source = r'D:\profile\codes\python_projects\ocp\networks\escorts\source\out.escorts'
+escorts_cost = r'D:\profile\codes\python_projects\ocp\networks\escorts\escorts.cost.txt'
+escorts_curingrate = r'D:\profile\codes\python_projects\ocp\networks\escorts\escorts.curingrate.txt'
+escorts_data = r'D:\profile\codes\python_projects\ocp\networks\escorts\escorts.data.txt'
+escorts_parameter = r'D:\profile\codes\python_projects\ocp\networks\escorts\escorts.parameter.txt'
+escorts_output = r'D:\profile\codes\python_projects\ocp\networks\escorts\output\escorts.output.txt'
+escorts_rand2_output = r'D:\profile\codes\python_projects\ocp\networks\escorts\output\escorts.rand2.output.txt'
+escorts_rand_to_best_output = r'D:\profile\codes\python_projects\ocp\networks\escorts\output\escorts.rand_to_best' \
+                             r'.output.txt '
+escorts_current_to_best_output = r'D:\profile\codes\python_projects\ocp\networks\escorts\output\escorts' \
+                                r'.current_to_best.output.txt '
+escorts_no_crossover_output = r'D:\profile\codes\python_projects\ocp\networks\escorts\output\escorts.no_crossover' \
+                             r'.output.txt '
+escorts_blank_output = r'D:\profile\codes\python_projects\ocp\networks\escorts\output\escorts.blank_output.txt'
+escorts_current_to_rand_output = r'D:\profile\codes\python_projects\ocp\networks\escorts\output\escorts.current_to_rand.output' \
+                                r'.txt '
+escorts_initial = r'D:\profile\codes\python_projects\ocp\networks\escorts\escorts.initial.txt'
+escorts_TS_output = r'D:\profile\codes\python_projects\ocp\networks\escorts\output\escorts.TS.output.txt'
+escorts_SA_output = r'D:\profile\codes\python_projects\ocp\networks\escorts\output\escorts.SA.output.txt'
+
+household_source = r'D:\profile\codes\python_projects\ocp\networks\household\source\out.household'
+household_cost = r'D:\profile\codes\python_projects\ocp\networks\household\household.cost.txt'
+household_curingrate = r'D:\profile\codes\python_projects\ocp\networks\household\household.curingrate.txt'
+household_data = r'D:\profile\codes\python_projects\ocp\networks\household\household.data.txt'
+household_parameter = r'D:\profile\codes\python_projects\ocp\networks\household\household.parameter.txt'
+household_output = r'D:\profile\codes\python_projects\ocp\networks\household\output\household.output.txt'
+household_rand2_output = r'D:\profile\codes\python_projects\ocp\networks\household\output\household.rand2.output.txt'
+household_rand_to_best_output = r'D:\profile\codes\python_projects\ocp\networks\household\output\household.rand_to_best' \
+                             r'.output.txt '
+household_current_to_best_output = r'D:\profile\codes\python_projects\ocp\networks\household\output\household' \
+                                r'.current_to_best.output.txt '
+household_no_crossover_output = r'D:\profile\codes\python_projects\ocp\networks\household\output\household.no_crossover' \
+                             r'.output.txt '
+household_blank_output = r'D:\profile\codes\python_projects\ocp\networks\household\output\household.blank_output.txt'
+household_current_to_rand_output = r'D:\profile\codes\python_projects\ocp\networks\household\output\household.current_to_rand.output' \
+                                r'.txt '
+household_initial = r'D:\profile\codes\python_projects\ocp\networks\household\household.initial.txt'
+household_TS_output = r'D:\profile\codes\python_projects\ocp\networks\household\output\household.TS.output.txt'
+household_SA_output = r'D:\profile\codes\python_projects\ocp\networks\household\output\household.SA.output.txt'
+
+NY_source = r'D:\profile\codes\python_projects\ocp\networks\NY\source\out.NY'
+NY_cost = r'D:\profile\codes\python_projects\ocp\networks\NY\NY.cost.txt'
+NY_curingrate = r'D:\profile\codes\python_projects\ocp\networks\NY\NY.curingrate.txt'
+NY_data = r'D:\profile\codes\python_projects\ocp\networks\NY\NY.data.txt'
+NY_parameter = r'D:\profile\codes\python_projects\ocp\networks\NY\NY.parameter.txt'
+NY_output = r'D:\profile\codes\python_projects\ocp\networks\NY\output\NY.output.txt'
+NY_rand2_output = r'D:\profile\codes\python_projects\ocp\networks\NY\output\NY.rand2.output.txt'
+NY_rand_to_best_output = r'D:\profile\codes\python_projects\ocp\networks\NY\output\NY.rand_to_best' \
+                             r'.output.txt '
+NY_current_to_best_output = r'D:\profile\codes\python_projects\ocp\networks\NY\output\NY' \
+                                r'.current_to_best.output.txt '
+NY_no_crossover_output = r'D:\profile\codes\python_projects\ocp\networks\NY\output\NY.no_crossover' \
+                             r'.output.txt '
+NY_blank_output = r'D:\profile\codes\python_projects\ocp\networks\NY\output\NY.blank_output.txt'
+NY_current_to_rand_output = r'D:\profile\codes\python_projects\ocp\networks\NY\output\NY.current_to_rand.output' \
+                                r'.txt '
+NY_initial = r'D:\profile\codes\python_projects\ocp\networks\NY\NY.initial.txt'
+NY_TS_output = r'D:\profile\codes\python_projects\ocp\networks\NY\output\NY.TS.output.txt'
+NY_SA_output = r'D:\profile\codes\python_projects\ocp\networks\NY\output\NY.SA.output.txt'
+
+bay_source = r'D:\profile\codes\python_projects\ocp\networks\bay\source\out.bay'
+bay_cost = r'D:\profile\codes\python_projects\ocp\networks\bay\bay.cost.txt'
+bay_curingrate = r'D:\profile\codes\python_projects\ocp\networks\bay\bay.curingrate.txt'
+bay_data = r'D:\profile\codes\python_projects\ocp\networks\bay\bay.data.txt'
+bay_parameter = r'D:\profile\codes\python_projects\ocp\networks\bay\bay.parameter.txt'
+bay_output = r'D:\profile\codes\python_projects\ocp\networks\bay\output\bay.output.txt'
+bay_rand2_output = r'D:\profile\codes\python_projects\ocp\networks\bay\output\bay.rand2.output.txt'
+bay_rand_to_best_output = r'D:\profile\codes\python_projects\ocp\networks\bay\output\bay.rand_to_best' \
+                             r'.output.txt '
+bay_current_to_best_output = r'D:\profile\codes\python_projects\ocp\networks\bay\output\bay' \
+                                r'.current_to_best.output.txt '
+bay_no_crossover_output = r'D:\profile\codes\python_projects\ocp\networks\bay\output\bay.no_crossover' \
+                             r'.output.txt '
+bay_blank_output = r'D:\profile\codes\python_projects\ocp\networks\bay\output\bay.blank_output.txt'
+bay_current_to_rand_output = r'D:\profile\codes\python_projects\ocp\networks\bay\output\bay.current_to_rand.output' \
+                                r'.txt '
+bay_initial = r'D:\profile\codes\python_projects\ocp\networks\bay\bay.initial.txt'
+bay_TS_output = r'D:\profile\codes\python_projects\ocp\networks\bay\output\bay.TS.output.txt'
+bay_SA_output = r'D:\profile\codes\python_projects\ocp\networks\bay\output\bay.SA.output.txt'
