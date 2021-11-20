@@ -27,7 +27,7 @@ width = total_width / n
 
 fig=plt.figure(figsize=(9, 7))
 
-plt.title('highschool', size=20)
+plt.title('Highschool', size=20)
 
 plt.ylim(int(min(Y1)), int(max(Y) + 1))
 # plt.yticks(range(int(min(Y1)), int(max(Y) + 3), 1))

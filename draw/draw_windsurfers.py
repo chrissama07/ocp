@@ -12,7 +12,7 @@ y4 = np.loadtxt(draw_pathes.windsurfers_current_to_best_output)
 fig=plt.figure(figsize=(15,6))
 x = [i for i in range(0, 105, 5)]
 ax1=fig.add_subplot(1,2,1)
-plt.title('windsurfers', size=18)
+plt.title('Filmtipset', size=18)
 plt.plot(x, y, label='rand_to_best', linewidth=1, color='r', marker='o')  # linestyle='dotted'
 plt.plot(x, y1, label='rand2', linewidth=1, color='b', marker='*')  # linestyle='dashed'
 plt.plot(x, y2, label='current_to_rand', linewidth=1, color='g', marker='^')
@@ -32,7 +32,7 @@ y2=y2[1:12]
 y3=y3[1:12]
 y4=y4[1:12]
 plt.xticks([i for i in range(5, 60, 5)])
-plt.title('windsurfers_subgraph', size=18)
+plt.title('Filmtipset Subgraph', size=18)
 plt.plot(x1, y, label='rand_to_best', linewidth=1, color='r', marker='o')  # linestyle='dotted'
 plt.plot(x1, y1, label='rand2', linewidth=1, color='b', marker='*')  # linestyle='dashed'
 plt.plot(x1, y2, label='current_to_rand', linewidth=1, color='g', marker='^')

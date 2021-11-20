@@ -31,7 +31,7 @@ width = total_width / n
 
 fig = plt.figure(figsize=(9, 7))
 
-plt.title('Algorithm Comparison hiv', size=20)
+plt.title('Algorithm Comparison of Hiv', size=20)
 
 plt.bar(X, Y, width=0.5, label='DESA', fc='deepskyblue')
 plt.bar(X1, Y1, width=0.5, label='SA', fc='lightpink')

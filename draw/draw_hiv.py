@@ -12,7 +12,7 @@ y4 = np.loadtxt(draw_pathes.hiv_current_to_best_output)
 fig=plt.figure(figsize=(15,6))
 x = [i for i in range(0, 105, 5)]
 ax1=fig.add_subplot(1,2,1)
-plt.title('hiv', size=18)
+plt.title('Hiv', size=18)
 plt.plot(x, y, label='rand_to_best', linewidth=1, color='r', marker='o')  # linestyle='dotted'
 plt.plot(x, y1, label='rand2', linewidth=1, color='b', marker='*')  # linestyle='dashed'
 plt.plot(x, y2, label='current_to_rand', linewidth=1, color='g', marker='^')
@@ -31,7 +31,7 @@ y1=y1[1:10]
 y2=y2[1:10]
 y3=y3[1:10]
 y4=y4[1:10]
-plt.title('hiv_subgraph', size=18)
+plt.title('Hiv Subgraph', size=18)
 plt.plot(x1, y, label='rand_to_best', linewidth=1, color='r', marker='o')  # linestyle='dotted'
 plt.plot(x1, y1, label='rand2', linewidth=1, color='b', marker='*')  # linestyle='dashed'
 plt.plot(x1, y2, label='current_to_rand', linewidth=1, color='g', marker='^')

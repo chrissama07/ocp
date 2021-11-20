@@ -328,18 +328,6 @@ def DE(x_list, flag):
             if x_list[i].put_fit() < x_best.put_fit() and x_list[i].put_feas() <= 0:
                 x_best = x_list[i]
 
-        # TODO
-        # if t == 0:
-        #     if flag == 1:
-        #         delta_list[1] = x_best.put_fit()
-        #     elif flag == 2:
-        #         delta_list_rand2[1] = x_best.put_fit()
-        #     elif flag == 3:
-        #         delta_list_rand_to_best[1] = x_best.put_fit()
-        #     elif flag == 4:
-        #         delta_list_current_to_best[1] = x_best.put_fit()
-        #     elif flag == 5:
-        #         delta_list_no_crossover[1] = x_best.put_fit()
         if t % interval == interval - 1:
             if flag == 1:
                 delta_list[t // interval + 1] = x_best.put_fit()

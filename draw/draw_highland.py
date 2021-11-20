@@ -23,7 +23,7 @@ fig=plt.figure(figsize=(15,6))
 x = [i for i in range(0, 105, 5)]
 ax1=fig.add_subplot(1,2,1)
 #plt.figure(figsize=(8, 6))
-plt.title('highland', size=18)
+plt.title('US Airports', size=18)
 # plt.plot(x, y0, label='blank', linewidth=1, color='black')
 plt.plot(x, y, label='rand_to_best', linewidth=1, color='r', marker='o')  # linestyle='dotted'
 plt.plot(x, y1, label='rand2', linewidth=1, color='b', marker='*')  # linestyle='dashed'
@@ -46,7 +46,7 @@ y3=y3[2:12]
 y4=y4[2:12]
 plt.xticks([i for i in range(10, 60, 5)])
 #plt.figure(figsize=(8, 6))
-plt.title('highland_subgraph', size=18)
+plt.title('US Airports Subgraph', size=18)
 # plt.plot(x, y0, label='blank', linewidth=1, color='black')
 plt.plot(x1, y, label='rand_to_best', linewidth=1, color='r', marker='o')  # linestyle='dotted'
 plt.plot(x1, y1, label='rand2', linewidth=1, color='b', marker='*')  # linestyle='dashed'

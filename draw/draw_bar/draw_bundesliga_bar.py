@@ -27,7 +27,7 @@ width = total_width / n
 
 fig=plt.figure(figsize=(9, 7))
 
-plt.title('bundesliga', size=20)
+plt.title('Hamsterster', size=20)
 
 plt.ylim(int(min(Y1)), int(max(Y) + 1))
 # plt.yticks(range(int(min(Y1)), int(max(Y) + 3), 1))
@@ -40,7 +40,7 @@ plt.legend()
 plt.xlabel('Contrast in Different Strategies', size=15)
 plt.ylabel('Lowest cost of vaccination', size=15)
 
-plt.savefig(draw_pathes.bundesliga_pictures_bar_1)
+plt.savefig(draw_pathes.bundesliga_pictures_bar_1, format='eps', dpi=1000)
 
 plt.show()
 

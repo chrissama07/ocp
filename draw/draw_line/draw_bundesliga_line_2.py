@@ -26,20 +26,20 @@ fig=plt.figure(figsize=(15,6))
 x = [i for i in range(0, 105, 5)]
 ax1=fig.add_subplot(1,2,1)
 #plt.figure(figsize=(8, 6))
-plt.title('bundesliga', size=18)
+plt.title('Hamsterster', size=18)
 # plt.plot(x, y0, label='blank', linewidth=1, color='black')
 # plt.plot(x, y, label='rand_to_best', linewidth=1, color='r', marker='o')  # linestyle='dotted'
 plt.plot(x, y1, label='rand2', linewidth=1, color='b', marker='*')  # linestyle='dashed'
 # plt.plot(x, y2, label='current_to_rand', linewidth=1, color='g', marker='^')
 plt.plot(x, y4, label='current_to_best', linewidth=1, color='y', marker='x')
-plt.plot(x, y3, label='no_crossover', linewidth=1, color='indigo', marker='.')
+plt.plot(x, y5, label='no_crossover', linewidth=1, color='indigo', marker='.')
 # plt.plot(x, y5, label='TS', linewidth=1, color='indigo', marker='.')
 plt.plot(x, y6, label='SA', linewidth=1, color='y', marker='x')
 
 plt.legend()  # 给label用的
 plt.grid(alpha=0.4, linestyle='--')
 plt.xlabel('Iteration', size=15)
-plt.ylabel('Objective function value', size=15)
+plt.ylabel('Lowest Cost of Vaccination', size=15)
 plt.xticks([i for i in range(0, 105, 5)])
 # plt.xlabel_params(labelsize=23)
 ax2=fig.add_subplot(1,2,2)
@@ -51,7 +51,7 @@ y5=y5[0:10]
 y6=y6[0:10]
 plt.xticks([i for i in range(0, 50, 5)])
 #plt.figure(figsize=(8, 6))
-plt.title('bundesliga_subgraph', size=18)
+plt.title('Hamsterster Subgraph', size=18)
 # plt.plot(x, y0, label='blank', linewidth=1, color='black')
 # plt.plot(x1, y, label='rand_to_best', linewidth=1, color='r', marker='o')  # linestyle='dotted'
 plt.plot(x1, y1, label='rand2', linewidth=1, color='b', marker='*')  # linestyle='dashed'
@@ -65,6 +65,6 @@ plt.plot(x1, y6, label='SA', linewidth=1, color= 'y', marker='x')
 plt.legend()  # 给label用的
 plt.grid(alpha=0.4, linestyle='--')
 plt.xlabel('Iteration', size=15)
-plt.ylabel('Objective function value', size=15)
+plt.ylabel('Lowest Cost of Vaccination', size=15)
 plt.savefig(draw_pathes.bundesliga_pictures_linechart_2)
 plt.show()
