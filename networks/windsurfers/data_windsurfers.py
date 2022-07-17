@@ -7,6 +7,8 @@ Cn = np.loadtxt(pathes.windsurfers_cost)
 
 gamma = np.loadtxt(pathes.windsurfers_curingrate)
 
+Rou = np.loadtxt(pathes.windsurfers_rou)
+
 with open(pathes.windsurfers_parameter) as f:
     lines = f.readlines()
 

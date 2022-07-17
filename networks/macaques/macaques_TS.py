@@ -17,6 +17,8 @@ Cn = data_macaques.Cn  # cost of each vaccine
 
 gamma = data_macaques.gamma  # curing rate
 
+Rou = data_macaques.Rou
+
 first_delta = np.loadtxt(pathes.macaques_initial)
 
 """:parameter for TS"""

@@ -7,6 +7,8 @@ Cn = np.loadtxt(pathes.bundesliga_cost)
 
 gamma = np.loadtxt(pathes.bundesliga_curingrate)
 
+Rou = np.loadtxt(pathes.bundesliga_rou)
+
 with open(pathes.bundesliga_parameter) as f:
     lines = f.readlines()
 

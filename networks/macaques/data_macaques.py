@@ -7,6 +7,8 @@ Cn = np.loadtxt(pathes.macaques_cost)
 
 gamma = np.loadtxt(pathes.macaques_curingrate)
 
+Rou = np.loadtxt(pathes.macaques_rou)
+
 with open(pathes.macaques_parameter) as f:
     lines = f.readlines()
 

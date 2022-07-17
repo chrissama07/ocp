@@ -17,6 +17,8 @@ Cn = data_windsurfers.Cn  # cost of each vaccine
 
 gamma = data_windsurfers.gamma  # curing rate
 
+Rou = data_windsurfers.Rou
+
 first_delta = np.loadtxt(pathes.windsurfers_initial)
 
 """:parameter for SA"""

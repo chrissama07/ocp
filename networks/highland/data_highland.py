@@ -7,6 +7,8 @@ Cn = np.loadtxt(pathes.highland_cost)
 
 gamma = np.loadtxt(pathes.highland_curingrate)
 
+Rou = np.loadtxt(pathes.highland_rou)
+
 with open(pathes.highland_parameter) as f:
     lines = f.readlines()
 

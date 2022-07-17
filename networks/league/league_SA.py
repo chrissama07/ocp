@@ -17,6 +17,8 @@ Cn = data_league.Cn  # cost of each vaccine
 
 gamma = data_league.gamma  # curing rate
 
+Rou = data_league.Rou
+
 first_delta = np.loadtxt(pathes.league_initial)
 
 """:parameter for SA"""
@@ -27,7 +29,7 @@ L = 10  # iteration in each temperature
 # area
 d_max = 0.005  # upper bound
 d_min = -0.005  # lower bound
-m = 10  # length of unfeasible solution list
+m = 15  # length of unfeasible solution list
 a = 0.9  # Coefficient of variation of T
 unfeasible_list = []
 

@@ -17,6 +17,8 @@ Cn = data_highschool.Cn  # cost of each vaccine
 
 gamma = data_highschool.gamma  # curing rate
 
+Rou = data_highschool.Rou
+
 first_delta = np.loadtxt(pathes.highschool_initial)
 
 """:parameter for TS"""

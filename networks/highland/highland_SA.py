@@ -17,6 +17,8 @@ Cn = data_highland.Cn  # cost of each vaccine
 
 gamma = data_highland.gamma  # curing rate
 
+Rou = data_highland.Rou
+
 first_delta = np.loadtxt(pathes.highland_initial)
 
 """:parameter for SA"""
@@ -25,8 +27,8 @@ T_max = 100000
 T_min = 1
 L = 20  # iteration in each temperature
 # area
-d_max = 0.01  # upper bound
-d_min = -0.01  # lower bound
+d_max = 0.003  # upper bound
+d_min = -0.003  # lower bound
 m = 10000  # length of unfeasible solution list
 a = 0.9  # Coefficient of variation of T
 unfeasible_list = []

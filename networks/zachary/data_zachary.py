@@ -7,6 +7,8 @@ Cn = np.loadtxt(pathes.zachary_cost)
 
 gamma = np.loadtxt(pathes.zachary_curingrate)
 
+Rou = np.loadtxt(pathes.zachary_rou)
+
 with open(pathes.zachary_parameter) as f:
     lines = f.readlines()
 

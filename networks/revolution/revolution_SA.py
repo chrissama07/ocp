@@ -17,6 +17,8 @@ Cn = data_revolution.Cn  # cost of each vaccine
 
 gamma = data_revolution.gamma  # curing rate
 
+Rou = data_revolution.Rou
+
 first_delta = np.loadtxt(pathes.revolution_initial)
 
 """:parameter for SA"""

@@ -28,7 +28,7 @@ for line in lines:
             edges[i][j] = random.uniform(beta_min, beta_max)
     i += 1
 
-Cn = np.array([random.randint(10, 20) for _ in range(node_number)])  # the cost of vaccine
+Cn = np.array([random.randint(200, 400) for _ in range(node_number)])  # the cost of vaccine
 gamma = np.array([random.uniform(0.6, 0.7) for _ in range(node_number)])  # curing rate
 
 # save edges data

@@ -17,6 +17,8 @@ Cn = data_revolution.Cn  # cost of each vaccine
 
 gamma = data_revolution.gamma  # curing rate
 
+Rou = data_revolution.Rou
+
 first_delta = np.loadtxt(pathes.revolution_initial)
 
 """:parameter for TS"""
@@ -50,7 +52,7 @@ class X:
         :return: feasible value
         """
         for i in range(E):
-            A[i, 2] = (1.0 - self.delta[int(A[i, 0])]) * (1.0 - self.delta[int(A[i, 1])]) * A[i, 2]
+            A[i, 2] = (1.0 - self.delta[int(A[i, 0])] * Rou[int(A[i, 0])]) * (1.0 - self.delta[int(A[i, 1])] * Rou[int(A[i, 0])]) * A[i, 2]
 
         a = sparse.lil_matrix((N, N))
         for i in range(E):

@@ -7,6 +7,8 @@ Cn = np.loadtxt(pathes.revolution_cost)
 
 gamma = np.loadtxt(pathes.revolution_curingrate)
 
+Rou = np.loadtxt(pathes.revolution_rou)
+
 with open(pathes.revolution_parameter) as f:
     lines = f.readlines()
 

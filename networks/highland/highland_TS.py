@@ -17,11 +17,13 @@ Cn = data_highland.Cn  # cost of each vaccine
 
 gamma = data_highland.gamma  # curing rate
 
+Rou = data_highland.Rou
+
 first_delta = np.loadtxt(pathes.highland_initial)
 
 """:parameter for TS"""
 T_TS = 100
-d_TS = 0.0005
+d_TS = 0.00005
 num_TS = 5
 
 interval = 5

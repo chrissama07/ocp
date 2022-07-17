@@ -17,11 +17,13 @@ Cn = data_league.Cn  # cost of each vaccine
 
 gamma = data_league.gamma  # curing rate
 
+Rou = data_league.Rou
+
 first_delta = np.loadtxt(pathes.league_initial)
 
 """:parameter for TS"""
 T_TS = 100
-d_TS = 0.0002
+d_TS = 0.0001
 num_TS = 5
 
 interval = 5

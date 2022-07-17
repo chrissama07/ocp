@@ -17,6 +17,8 @@ Cn = data_zachary.Cn  # cost of each vaccine
 
 gamma = data_zachary.gamma  # curing rate
 
+Rou = data_zachary.Rou
+
 first_delta = np.loadtxt(pathes.zachary_initial)
 
 """:parameter for TS"""
